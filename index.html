@@ -86,7 +86,7 @@
       <label for="hortalicasTuberosas">Selecione o alimento/preparo:</label>
       <select id="hortalicasTuberosas" required>
         <option value="" selected disabled>--Selecione--</option>
-        <option value="batataInglesaCrua">Batata-inglesa / crua</option>
+        <option value="batataInglesaCrua">Batata-inglesa / Crua</option>
       </select>
 
       <label for="quantidadeHortalicasTuberosas">Quantidade em gramas:</label>
@@ -143,6 +143,618 @@
         <div class="resultado">
           <label class="total" for="resultadoSodiofield2">Sódio:</label>
           <span id="resultadoSodiofield2"></span>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <form id="form3">
+    <fieldset class="farinhasFeculasMassas field3">
+      <legend>FARINHAS, FÉCULAS E MASSAS</legend>
+      <label for="farinhasFeculasMassas">Selecione o alimento/preparo:</label>
+      <select id="farinhasFeculasMassas" required>
+        <option value="" selected disabled>--Selecione--</option>
+        <option value="cremeDeArroz">Creme de arroz / Não se aplica</option>
+      </select>
+
+      <label for="quantidadeFarinhasFeculasMassas">Quantidade em gramas:</label>
+      <input class="quantidade" type="number" id="quantidadeFarinhasFeculasMassas" required>
+
+      <button form="form3" type="button" onclick="calcularFarinhasFeculasMassas()">Calcular</button>
+
+      <div class="resultados">
+        <div class="resultado">
+          <label class="total" for="resultadoEnergiafield3">Energia:</label>
+          <span id="resultadoEnergiafield3"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoProteinafield3">Proteína:</label>
+          <span id="resultadoProteinafield3"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoLipidiosfield3">Lipídios totais:</label>
+          <span id="resultadoLipidiosfield3"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoCarboidratofield3">Carboidrato:</label>
+          <span id="resultadoCarboidratofield3"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoFibrafield3">Fibra alimentar total:</label>
+          <span id="resultadoFibrafield3"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAGSaturadosfield3">AG saturados:</label>
+          <span id="resultadoAGSaturadosfield3"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAcucarTotalfield3">Açucar total:</label>
+          <span id="resultadoAcucarTotalfield3"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAcucarDeAdicaofield3">Açucar de adição:</label>
+          <span id="resultadoAcucarDeAdicaofield3"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoFerrofield3">Ferro:</label>
+          <span id="resultadoFerrofield3"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoSodiofield3">Sódio:</label>
+          <span id="resultadoSodiofield3"></span>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <form id="form4">
+    <fieldset class="cocosCastanhasNozes field4">
+      <legend>COCOS, CASTANHAS E NOZES</legend>
+      <label for="cocosCastanhasNozes">Selecione o alimento/preparo:</label>
+      <select id="cocosCastanhasNozes" required>
+        <option value="" selected disabled>--Selecione--</option>
+        <option value="cocoDaBaia">Coco-da-baía (seco ou verde) / Não se aplica</option>
+      </select>
+
+      <label for="quantidadeCocosCastanhasNozes">Quantidade em gramas:</label>
+      <input class="quantidade" type="number" id="quantidadeCocosCastanhasNozes" required>
+
+      <button form="form4" type="button" onclick="calcularCocosCastanhasNozes()">Calcular</button>
+
+      <div class="resultados">
+        <div class="resultado">
+          <label class="total" for="resultadoEnergiafield4">Energia:</label>
+          <span id="resultadoEnergiafield4"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoProteinafield4">Proteína:</label>
+          <span id="resultadoProteinafield4"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoLipidiosfield4">Lipídios totais:</label>
+          <span id="resultadoLipidiosfield4"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoCarboidratofield4">Carboidrato:</label>
+          <span id="resultadoCarboidratofield4"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoFibrafield4">Fibra alimentar total:</label>
+          <span id="resultadoFibrafield4"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAGSaturadosfield4">AG saturados:</label>
+          <span id="resultadoAGSaturadosfield4"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAcucarTotalfield4">Açucar total:</label>
+          <span id="resultadoAcucarTotalfield4"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAcucarDeAdicaofield4">Açucar de adição:</label>
+          <span id="resultadoAcucarDeAdicaofield4"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoFerrofield4">Ferro:</label>
+          <span id="resultadoFerrofield4"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoSodiofield4">Sódio:</label>
+          <span id="resultadoSodiofield4"></span>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <form id="form5">
+    <fieldset class="hortalicasFolhosasFrutosasOutras field5">
+      <legend>HORTALIÇAS FOLHOSAS, FRUTOSAS E OUTRAS</legend>
+      <label for="hortalicasFolhosasFrutosasOutras">Selecione o alimento/preparo:</label>
+      <select id="hortalicasFolhosasFrutosasOutras" required>
+        <option value="" selected disabled>--Selecione--</option>
+        <option value="alface">Alface / Não se aplica</option>
+      </select>
+
+      <label for="quantidadeHortalicasFolhosasFrutosasOutras">Quantidade em gramas:</label>
+      <input class="quantidade" type="number" id="quantidadeHortalicasFolhosasFrutosasOutras" required>
+
+      <button form="form5" type="button" onclick="calcularHortalicasFolhosasFrutosasOutras()">Calcular</button>
+
+      <div class="resultados">
+        <div class="resultado">
+          <label class="total" for="resultadoEnergiafield5">Energia:</label>
+          <span id="resultadoEnergiafield5"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoProteinafield5">Proteína:</label>
+          <span id="resultadoProteinafield5"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoLipidiosfield5">Lipídios totais:</label>
+          <span id="resultadoLipidiosfield5"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoCarboidratofield5">Carboidrato:</label>
+          <span id="resultadoCarboidratofield5"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoFibrafield5">Fibra alimentar total:</label>
+          <span id="resultadoFibrafield5"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAGSaturadosfield5">AG saturados:</label>
+          <span id="resultadoAGSaturadosfield5"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAcucarTotalfield5">Açucar total:</label>
+          <span id="resultadoAcucarTotalfield5"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAcucarDeAdicaofield5">Açucar de adição:</label>
+          <span id="resultadoAcucarDeAdicaofield5"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoFerrofield5">Ferro:</label>
+          <span id="resultadoFerrofield5"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoSodiofield5">Sódio:</label>
+          <span id="resultadoSodiofield5"></span>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <form id="form6">
+    <fieldset class="frutas field6">
+      <legend>FRUTAS</legend>
+      <label for="frutas">Selecione o alimento/preparo:</label>
+      <select id="frutas" required>
+        <option value="" selected disabled>--Selecione--</option>
+        <option value="pacova">Pacová / Não se aplica</option>
+      </select>
+
+      <label for="quantidadeFrutas">Quantidade em gramas:</label>
+      <input class="quantidade" type="number" id="quantidadeFrutas" required>
+
+      <button form="form6" type="button" onclick="calcularFrutas()">Calcular</button>
+
+      <div class="resultados">
+        <div class="resultado">
+          <label class="total" for="resultadoEnergiafield6">Energia:</label>
+          <span id="resultadoEnergiafield6"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoProteinafield6">Proteína:</label>
+          <span id="resultadoProteinafield6"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoLipidiosfield6">Lipídios totais:</label>
+          <span id="resultadoLipidiosfield6"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoCarboidratofield6">Carboidrato:</label>
+          <span id="resultadoCarboidratofield6"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoFibrafield6">Fibra alimentar total:</label>
+          <span id="resultadoFibrafield6"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAGSaturadosfield6">AG saturados:</label>
+          <span id="resultadoAGSaturadosfield6"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAcucarTotalfield6">Açucar total:</label>
+          <span id="resultadoAcucarTotalfield6"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAcucarDeAdicaofield6">Açucar de adição:</label>
+          <span id="resultadoAcucarDeAdicaofield6"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoFerrofield6">Ferro:</label>
+          <span id="resultadoFerrofield6"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoSodiofield6">Sódio:</label>
+          <span id="resultadoSodiofield6"></span>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <form id="form7">
+    <fieldset class="acucaresProdutosDeConfeitaria field7">
+      <legend>AÇUCARES E PRODUTOS DE CONFEITARIA</legend>
+      <label for="acucaresProdutosDeConfeitaria">Selecione o alimento/preparo:</label>
+      <select id="acucaresProdutosDeConfeitaria" required>
+        <option value="" selected disabled>--Selecione--</option>
+        <option value="demerara">Demerara / Não se aplica</option>
+      </select>
+
+      <label for="quantidadeAcucaresProdutosDeConfeitaria">Quantidade em gramas:</label>
+      <input class="quantidade" type="number" id="quantidadeAcucaresProdutosDeConfeitaria" required>
+
+      <button form="form7" type="button" onclick="calcularAcucaresProdutosDeConfeitaria()">Calcular</button>
+
+      <div class="resultados">
+        <div class="resultado">
+          <label class="total" for="resultadoEnergiafield7">Energia:</label>
+          <span id="resultadoEnergiafield7"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoProteinafield7">Proteína:</label>
+          <span id="resultadoProteinafield7"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoLipidiosfield7">Lipídios totais:</label>
+          <span id="resultadoLipidiosfield7"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoCarboidratofield7">Carboidrato:</label>
+          <span id="resultadoCarboidratofield7"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoFibrafield7">Fibra alimentar total:</label>
+          <span id="resultadoFibrafield7"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAGSaturadosfield7">AG saturados:</label>
+          <span id="resultadoAGSaturadosfield7"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAcucarTotalfield7">Açucar total:</label>
+          <span id="resultadoAcucarTotalfield7"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAcucarDeAdicaofield7">Açucar de adição:</label>
+          <span id="resultadoAcucarDeAdicaofield7"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoFerrofield7">Ferro:</label>
+          <span id="resultadoFerrofield7"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoSodiofield7">Sódio:</label>
+          <span id="resultadoSodiofield7"></span>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <form id="form8">
+    <fieldset class="saisCondimentos field8">
+      <legend>SAIS E CONDIMENTOS</legend>
+      <label for="saisCondimentos">Selecione o alimento/preparo:</label>
+      <select id="saisCondimentos" required>
+        <option value="" selected disabled>--Selecione--</option>
+        <option value="mostardaMolho">Mostarda molho / Não se aplica</option>
+      </select>
+
+      <label for="quantidadeSaisCondimentos">Quantidade em gramas:</label>
+      <input class="quantidade" type="number" id="quantidadeSaisCondimentos" required>
+
+      <button form="form8" type="button" onclick="calcularSaisCondimentos()">Calcular</button>
+
+      <div class="resultados">
+        <div class="resultado">
+          <label class="total" for="resultadoEnergiafield8">Energia:</label>
+          <span id="resultadoEnergiafield8"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoProteinafield8">Proteína:</label>
+          <span id="resultadoProteinafield8"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoLipidiosfield8">Lipídios totais:</label>
+          <span id="resultadoLipidiosfield8"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoCarboidratofield8">Carboidrato:</label>
+          <span id="resultadoCarboidratofield8"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoFibrafield8">Fibra alimentar total:</label>
+          <span id="resultadoFibrafield8"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAGSaturadosfield8">AG saturados:</label>
+          <span id="resultadoAGSaturadosfield8"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAcucarTotalfield8">Açucar total:</label>
+          <span id="resultadoAcucarTotalfield8"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAcucarDeAdicaofield8">Açucar de adição:</label>
+          <span id="resultadoAcucarDeAdicaofield8"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoFerrofield8">Ferro:</label>
+          <span id="resultadoFerrofield8"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoSodiofield8">Sódio:</label>
+          <span id="resultadoSodiofield8"></span>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <form id="form9">
+    <fieldset class="carnesVisceras field9">
+      <legend>CARNES E VÍSCERAS</legend>
+      <label for="carnesVisceras">Selecione o alimento/preparo:</label>
+      <select id="carnesVisceras" required>
+        <option value="" selected disabled>--Selecione--</option>
+        <option value="fileMignon">Filé-mignon / Cozido</option>
+      </select>
+
+      <label for="quantidadeCarnesVisceras">Quantidade em gramas:</label>
+      <input class="quantidade" type="number" id="quantidadeCarnesVisceras" required>
+
+      <button form="form9" type="button" onclick="calcularCarnesVisceras()">Calcular</button>
+
+      <div class="resultados">
+        <div class="resultado">
+          <label class="total" for="resultadoEnergiafield9">Energia:</label>
+          <span id="resultadoEnergiafield9"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoProteinafield9">Proteína:</label>
+          <span id="resultadoProteinafield9"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoLipidiosfield9">Lipídios totais:</label>
+          <span id="resultadoLipidiosfield9"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoCarboidratofield9">Carboidrato:</label>
+          <span id="resultadoCarboidratofield9"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoFibrafield9">Fibra alimentar total:</label>
+          <span id="resultadoFibrafield9"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAGSaturadosfield9">AG saturados:</label>
+          <span id="resultadoAGSaturadosfield9"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAcucarTotalfield9">Açucar total:</label>
+          <span id="resultadoAcucarTotalfield9"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAcucarDeAdicaofield9">Açucar de adição:</label>
+          <span id="resultadoAcucarDeAdicaofield9"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoFerrofield9">Ferro:</label>
+          <span id="resultadoFerrofield9"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoSodiofield9">Sódio:</label>
+          <span id="resultadoSodiofield9"></span>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <form id="form10">
+    <fieldset class="pescadosFrutosDoMar field10">
+      <legend>PESCADOS E FRUTOS DO MAR</legend>
+      <label for="pescadosFrutosDoMar">Selecione o alimento/preparo:</label>
+      <select id="pescadosFrutosDoMar" required>
+        <option value="" selected disabled>--Selecione--</option>
+        <option value="peixeDeMar">Peixe de mar (inteiro, em posta, em filé, etc.) / Cru</option>
+      </select>
+
+      <label for="quantidadePescadosFrutosDoMar">Quantidade em gramas:</label>
+      <input class="quantidade" type="number" id="quantidadePescadosFrutosDoMar" required>
+
+      <button form="form10" type="button" onclick="calcularPescadosFrutosDoMar()">Calcular</button>
+
+      <div class="resultados">
+        <div class="resultado">
+          <label class="total" for="resultadoEnergiafield10">Energia:</label>
+          <span id="resultadoEnergiafield10"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoProteinafield10">Proteína:</label>
+          <span id="resultadoProteinafield10"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoLipidiosfield10">Lipídios totais:</label>
+          <span id="resultadoLipidiosfield10"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoCarboidratofield10">Carboidrato:</label>
+          <span id="resultadoCarboidratofield10"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoFibrafield10">Fibra alimentar total:</label>
+          <span id="resultadoFibrafield10"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAGSaturadosfield10">AG saturados:</label>
+          <span id="resultadoAGSaturadosfield10"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAcucarTotalfield10">Açucar total:</label>
+          <span id="resultadoAcucarTotalfield10"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAcucarDeAdicaofield10">Açucar de adição:</label>
+          <span id="resultadoAcucarDeAdicaofield10"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoFerrofield10">Ferro:</label>
+          <span id="resultadoFerrofield10"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoSodiofield10">Sódio:</label>
+          <span id="resultadoSodiofield10"></span>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <form id="form11">
+    <fieldset class="enlatadosConservas field11">
+      <legend>ENLATADOS E CONSERVAS</legend>
+      <label for="enlatadosConservas">Selecione o alimento/preparo:</label>
+      <select id="enlatadosConservas" required>
+        <option value="" selected disabled>--Selecione--</option>
+        <option value="peixeDeMar">Azeitona / Não se aplica</option>
+      </select>
+
+      <label for="quantidadeEnlatadosConservas">Quantidade em gramas:</label>
+      <input class="quantidade" type="number" id="quantidadeEnlatadosConservas" required>
+
+      <button form="form11" type="button" onclick="calcularEnlatadosConservas()">Calcular</button>
+
+      <div class="resultados">
+        <div class="resultado">
+          <label class="total" for="resultadoEnergiafield11">Energia:</label>
+          <span id="resultadoEnergiafield11"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoProteinafield11">Proteína:</label>
+          <span id="resultadoProteinafield11"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoLipidiosfield11">Lipídios totais:</label>
+          <span id="resultadoLipidiosfield11"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoCarboidratofield11">Carboidrato:</label>
+          <span id="resultadoCarboidratofield11"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoFibrafield11">Fibra alimentar total:</label>
+          <span id="resultadoFibrafield11"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAGSaturadosfield11">AG saturados:</label>
+          <span id="resultadoAGSaturadosfield11"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAcucarTotalfield11">Açucar total:</label>
+          <span id="resultadoAcucarTotalfield11"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoAcucarDeAdicaofield11">Açucar de adição:</label>
+          <span id="resultadoAcucarDeAdicaofield11"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoFerrofield11">Ferro:</label>
+          <span id="resultadoFerrofield11"></span>
+        </div>
+
+        <div class="resultado">
+          <label class="total" for="resultadoSodiofield11">Sódio:</label>
+          <span id="resultadoSodiofield11"></span>
         </div>
       </div>
     </fieldset>

@@ -8,12 +8,15 @@
 body {
   background-color: #effeed;
   font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 form {
-  margin: 4rem;
-  max-width: 50rem;
+  margin: 3rem;
   color: white;
+  max-width: 17.4rem;
 }
 
 #form1 {
@@ -22,6 +25,7 @@ form {
 
 #form1 select {
   color: #ff6e9c;
+  width: 15rem;
 }
 
 #form1 .quantidade {
@@ -34,10 +38,128 @@ form {
 
 #form2 select {
   color: #00bc3c;
+  width: 15rem;
 }
 
 #form2 .quantidade {
   color: #00bc3c;
+}
+
+#form3 {
+  background-color: #b100f1;
+}
+
+#form3 select {
+  color: #b100f1;
+  width: 15rem;
+}
+
+#form3 .quantidade {
+  color: #b100f1;
+}
+
+#form4 {
+  background-color: #fd7f01;
+}
+
+#form4 select {
+  color: #fd7f01;
+  width: 15rem;
+}
+
+#form4 .quantidade {
+  color: #fd7f01;
+}
+
+#form5 {
+  background-color: #ce0000;
+}
+
+#form5 select {
+  color: #ce0000;
+  width: 15rem;
+}
+
+#form5 .quantidade {
+  color: #ce0000;
+}
+
+#form6 {
+  background-color: #2665cb;
+}
+
+#form6 select {
+  color: #2665cb;
+  width: 15rem;
+}
+
+#form6 .quantidade {
+  color: #2665cb;
+}
+
+#form7 {
+  background-color: #1eb58a;
+}
+
+#form7 select {
+  color: #1eb58a;
+  width: 15rem;
+}
+
+#form7 .quantidade {
+  color: #1eb58a;
+}
+
+#form8 {
+  background-color: #e20080;
+}
+
+#form8 select {
+  color: #e20080;
+  width: 15rem;
+}
+
+#form8 .quantidade {
+  color: #e20080;
+}
+
+#form9 {
+  background-color: #720081;
+}
+
+#form9 select {
+  color: #720081;
+  width: 15rem;
+}
+
+#form9 .quantidade {
+  color: #720081;
+}
+
+#form10 {
+  background-color: #c0b005;
+}
+
+#form10 select {
+  color: #c0b005;
+  width: 15rem;
+}
+
+#form10 .quantidade {
+  color: #c0b005;
+}
+
+#form11 {
+  background-color: #00778f;
+}
+
+#form11 select {
+  color: #00778f;
+  width: 15rem;
+}
+
+#form11 .quantidade {
+  color: #00778f;
 }
 
 fieldset {
@@ -79,6 +201,7 @@ button {
 }
 
 button:hover {
+  cursor: pointer;
   border: 2px dashed #fff;
   background-color: #ffffff33;
 }
