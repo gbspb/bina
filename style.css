@@ -162,6 +162,110 @@ form {
   color: #00778f;
 }
 
+#form12 {
+  background-color: #6c03bc;
+}
+
+#form12 select {
+  color: #6c03bc;
+  width: 15rem;
+}
+
+#form12 .quantidade {
+  color: #6c03bc;
+}
+
+#form13 {
+  background-color: #e73f66;
+}
+
+#form13 select {
+  color: #e73f66;
+  width: 15rem;
+}
+
+#form13 .quantidade {
+  color: #e73f66;
+}
+
+#form14 {
+  background-color: #009035;
+}
+
+#form14 select {
+  color: #009035;
+  width: 15rem;
+}
+
+#form14 .quantidade {
+  color: #009035;
+}
+
+#form15 {
+  background-color: #e10000;
+}
+
+#form15 select {
+  color: #e10000;
+  width: 15rem;
+}
+
+#form15 .quantidade {
+  color: #e10000;
+}
+
+#form16 {
+  background-color: #2665cb;
+}
+
+#form16 select {
+  color: #2665cb;
+  width: 15rem;
+}
+
+#form16 .quantidade {
+  color: #2665cb;
+}
+
+#form17 {
+  background-color: #ff5a1e;
+}
+
+#form17 select {
+  color: #ff5a1e;
+  width: 15rem;
+}
+
+#form17 .quantidade {
+  color: #ff5a1e;
+}
+
+#form18 {
+  background-color: #6f3994;
+}
+
+#form18 select {
+  color: #6f3994;
+  width: 15rem;
+}
+
+#form18 .quantidade {
+  color: #6f3994;
+}
+
+#form19 {
+  background-color: #46b000;
+}
+
+#form19 select {
+  color: #46b000;
+  width: 15rem;
+}
+
+#form19 .quantidade {
+  color: #46b000;
+}
+
 fieldset {
   padding: 1.2rem;
   display: flex;

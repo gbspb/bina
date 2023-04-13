@@ -18,7 +18,31 @@ function calcularCereaisLeguminosas() {
     ferro = 0.0008 * quantidadeCereaisLeguminosas
     sodio = 0.0119 * quantidadeCereaisLeguminosas
   }
+  if (cereaisLeguminosas === "arrozOrganico") {
+    energia = 1.3562 * quantidadeCereaisLeguminosas
+    proteina = 0.025 * quantidadeCereaisLeguminosas
+    lipidios = 0.012 * quantidadeCereaisLeguminosas
+    carboidrato = 0.2778 * quantidadeCereaisLeguminosas
+    fibra = 0.0155 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0035 * quantidadeCereaisLeguminosas
+    acucarTotal = 0 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0008 * quantidadeCereaisLeguminosas
+    sodio = 0.0119 * quantidadeCereaisLeguminosas
+  }
   if (cereaisLeguminosas === "arrozIntegral") {
+    energia = 1.3095 * quantidadeCereaisLeguminosas
+    proteina = 0.0256 * quantidadeCereaisLeguminosas
+    lipidios = 0.0197 * quantidadeCereaisLeguminosas
+    carboidrato = 0.2556 * quantidadeCereaisLeguminosas
+    fibra = 0.0272 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0045 * quantidadeCereaisLeguminosas
+    acucarTotal = 0 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0026 * quantidadeCereaisLeguminosas
+    sodio = 0.0123 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "arrozIntegralOrganico") {
     energia = 1.3095 * quantidadeCereaisLeguminosas
     proteina = 0.0256 * quantidadeCereaisLeguminosas
     lipidios = 0.0197 * quantidadeCereaisLeguminosas
@@ -41,6 +65,378 @@ function calcularCereaisLeguminosas() {
     acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
     ferro = 0.0045 * quantidadeCereaisLeguminosas
     sodio = 2.4496 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "milhoGraoCozido") {
+    energia = 1.6014 * quantidadeCereaisLeguminosas
+    proteina = 0.0332 * quantidadeCereaisLeguminosas
+    lipidios = 0.0718 * quantidadeCereaisLeguminosas
+    carboidrato = 0.2511 * quantidadeCereaisLeguminosas
+    fibra = 0.0425 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0112 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0316 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0045 * quantidadeCereaisLeguminosas
+    sodio = 2.4496 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "milhoGraoGrelhadoBrasaChurrasco") {
+    energia = 1.6014 * quantidadeCereaisLeguminosas
+    proteina = 0.0332 * quantidadeCereaisLeguminosas
+    lipidios = 0.0718 * quantidadeCereaisLeguminosas
+    carboidrato = 0.2511 * quantidadeCereaisLeguminosas
+    fibra = 0.0425 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0112 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0316 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0045 * quantidadeCereaisLeguminosas
+    sodio = 2.4496 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "milhoGraoAssado") {
+    energia = 1.6014 * quantidadeCereaisLeguminosas
+    proteina = 0.0332 * quantidadeCereaisLeguminosas
+    lipidios = 0.0718 * quantidadeCereaisLeguminosas
+    carboidrato = 0.2511 * quantidadeCereaisLeguminosas
+    fibra = 0.0425 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0112 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0316 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0045 * quantidadeCereaisLeguminosas
+    sodio = 2.4496 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "milhoGraoRefogado") {
+    energia = 1.6014 * quantidadeCereaisLeguminosas
+    proteina = 0.0332 * quantidadeCereaisLeguminosas
+    lipidios = 0.0718 * quantidadeCereaisLeguminosas
+    carboidrato = 0.2511 * quantidadeCereaisLeguminosas
+    fibra = 0.0425 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0112 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0316 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0044 * quantidadeCereaisLeguminosas
+    sodio = 0 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "milhoGraoEnsopado") {
+    energia = 1.6014 * quantidadeCereaisLeguminosas
+    proteina = 0.0332 * quantidadeCereaisLeguminosas
+    lipidios = 0.0718 * quantidadeCereaisLeguminosas
+    carboidrato = 0.2511 * quantidadeCereaisLeguminosas
+    fibra = 0.0425 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0112 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0316 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0044 * quantidadeCereaisLeguminosas
+    sodio = 0 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "milhoGrao") {
+    energia = 1.6014 * quantidadeCereaisLeguminosas
+    proteina = 0.0332 * quantidadeCereaisLeguminosas
+    lipidios = 0.0718 * quantidadeCereaisLeguminosas
+    carboidrato = 0.2511 * quantidadeCereaisLeguminosas
+    fibra = 0.0425 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0112 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0316 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0045 * quantidadeCereaisLeguminosas
+    sodio = 2.4496 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "canjiquinhaDeMilhoEmGraoCrua") {
+    energia = 0.7968 * quantidadeCereaisLeguminosas
+    proteina = 0.0124 * quantidadeCereaisLeguminosas
+    lipidios = 0.022 * quantidadeCereaisLeguminosas
+    carboidrato = 0.135 * quantidadeCereaisLeguminosas
+    fibra = 0.0067 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0033 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0029 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0074 * quantidadeCereaisLeguminosas
+    sodio = 1.315 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "canjiquinhaDeMilhoEmGraoCozida") {
+    energia = 0.6295 * quantidadeCereaisLeguminosas
+    proteina = 0.0124 * quantidadeCereaisLeguminosas
+    lipidios = 0.0031 * quantidadeCereaisLeguminosas
+    carboidrato = 0.135 * quantidadeCereaisLeguminosas
+    fibra = 0.0067 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0003 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0029 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0074 * quantidadeCereaisLeguminosas
+    sodio = 0.0501 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "canjiquinhaDeMilhoEmGraoEnsopada") {
+    energia = 0.7968 * quantidadeCereaisLeguminosas
+    proteina = 0.0124 * quantidadeCereaisLeguminosas
+    lipidios = 0.022 * quantidadeCereaisLeguminosas
+    carboidrato = 0.135 * quantidadeCereaisLeguminosas
+    fibra = 0.0067 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0033 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0029 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0074 * quantidadeCereaisLeguminosas
+    sodio = 0.0501 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "canjiquinhaDeMilhoEmGraoMingau") {
+    energia = 0.6295 * quantidadeCereaisLeguminosas
+    proteina = 0.0124 * quantidadeCereaisLeguminosas
+    lipidios = 0.0031 * quantidadeCereaisLeguminosas
+    carboidrato = 0.135 * quantidadeCereaisLeguminosas
+    fibra = 0.0067 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0003 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0029 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0074 * quantidadeCereaisLeguminosas
+    sodio = 0.0501 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "canjiquinhaDeMilhoEmGraoSopa") {
+    energia = 0.3144 * quantidadeCereaisLeguminosas
+    proteina = 0.0095 * quantidadeCereaisLeguminosas
+    lipidios = 0.0012 * quantidadeCereaisLeguminosas
+    carboidrato = 0.0701 * quantidadeCereaisLeguminosas
+    fibra = 0.0071 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0004 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0328 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0.0252 * quantidadeCereaisLeguminosas
+    ferro = 0.0029 * quantidadeCereaisLeguminosas
+    sodio = 3.1043 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "canjiquinhaDeMilhoEmGrao") {
+    energia = 0.6295 * quantidadeCereaisLeguminosas
+    proteina = 0.0124 * quantidadeCereaisLeguminosas
+    lipidios = 0.0031 * quantidadeCereaisLeguminosas
+    carboidrato = 0.135 * quantidadeCereaisLeguminosas
+    fibra = 0.0067 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0003 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0029 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0074 * quantidadeCereaisLeguminosas
+    sodio = 0.0501 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "xeremDeMilho") {
+    energia = 0.6295 * quantidadeCereaisLeguminosas
+    proteina = 0.0124 * quantidadeCereaisLeguminosas
+    lipidios = 0.0031 * quantidadeCereaisLeguminosas
+    carboidrato = 0.135 * quantidadeCereaisLeguminosas
+    fibra = 0.0067 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0003 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0029 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0074 * quantidadeCereaisLeguminosas
+    sodio = 0.0501 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "amendoimEmGraoInNatura") {
+    energia = 5.67 * quantidadeCereaisLeguminosas
+    proteina = 0.258 * quantidadeCereaisLeguminosas
+    lipidios = 0.4924 * quantidadeCereaisLeguminosas
+    carboidrato = 0.1613 * quantidadeCereaisLeguminosas
+    fibra = 0.085 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0683 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.04 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0458 * quantidadeCereaisLeguminosas
+    sodio = 0.18 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "ervilhaEmGrao") {
+    energia = 1.0909 * quantidadeCereaisLeguminosas
+    proteina = 0.0536 * quantidadeCereaisLeguminosas
+    lipidios = 0.0306 * quantidadeCereaisLeguminosas
+    carboidrato = 0.1563 * quantidadeCereaisLeguminosas
+    fibra = 0.055 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0048 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0594 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0154 * quantidadeCereaisLeguminosas
+    sodio = 0.03 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "favaEmGrao") {
+    energia = 0.8562 * quantidadeCereaisLeguminosas
+    proteina = 0.048 * quantidadeCereaisLeguminosas
+    lipidios = 0.0317 * quantidadeCereaisLeguminosas
+    carboidrato = 0.101 * quantidadeCereaisLeguminosas
+    fibra = 0.036 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0056 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0124 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.015 * quantidadeCereaisLeguminosas
+    sodio = 0.41 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "mangaloAmargoEmGrao") {
+    energia = 0.8562 * quantidadeCereaisLeguminosas
+    proteina = 0.048 * quantidadeCereaisLeguminosas
+    lipidios = 0.0317 * quantidadeCereaisLeguminosas
+    carboidrato = 0.101 * quantidadeCereaisLeguminosas
+    fibra = 0.036 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0056 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0124 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.015 * quantidadeCereaisLeguminosas
+    sodio = 0.41 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "feijaoDeCorda") {
+    energia = 1.2133 * quantidadeCereaisLeguminosas
+    proteina = 0.0317 * quantidadeCereaisLeguminosas
+    lipidios = 0.0313 * quantidadeCereaisLeguminosas
+    carboidrato = 0.2032 * quantidadeCereaisLeguminosas
+    fibra = 0.05 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0053 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0034 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0112 * quantidadeCereaisLeguminosas
+    sodio = 0.04 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "feijaoVerde") {
+    energia = 1.2133 * quantidadeCereaisLeguminosas
+    proteina = 0.0317 * quantidadeCereaisLeguminosas
+    lipidios = 0.0313 * quantidadeCereaisLeguminosas
+    carboidrato = 0.2032 * quantidadeCereaisLeguminosas
+    fibra = 0.05 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0053 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0034 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0112 * quantidadeCereaisLeguminosas
+    sodio = 0.04 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "feijaoVerdeOrganico") {
+    energia = 1.2133 * quantidadeCereaisLeguminosas
+    proteina = 0.0317 * quantidadeCereaisLeguminosas
+    lipidios = 0.0313 * quantidadeCereaisLeguminosas
+    carboidrato = 0.2032 * quantidadeCereaisLeguminosas
+    fibra = 0.05 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0053 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0034 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0112 * quantidadeCereaisLeguminosas
+    sodio = 0.04 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "sementeDeLinhaca") {
+    energia = 5.34 * quantidadeCereaisLeguminosas
+    proteina = 0.1829 * quantidadeCereaisLeguminosas
+    lipidios = 0.4216 * quantidadeCereaisLeguminosas
+    carboidrato = 0.2888 * quantidadeCereaisLeguminosas
+    fibra = 0.273 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0366 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0155 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0573 * quantidadeCereaisLeguminosas
+    sodio = 0.3 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "andu") {
+    energia = 0.9741 * quantidadeCereaisLeguminosas
+    proteina = 0.0584 * quantidadeCereaisLeguminosas
+    lipidios = 0.0179 * quantidadeCereaisLeguminosas
+    carboidrato = 0.1505 * quantidadeCereaisLeguminosas
+    fibra = 0.0378 * quantidadeCereaisLeguminosas
+    agSaturados = 0.003 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.003 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0222 * quantidadeCereaisLeguminosas
+    sodio = 0.052 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "graoDeBico") {
+    energia = 1.8848 * quantidadeCereaisLeguminosas
+    proteina = 0.0886 * quantidadeCereaisLeguminosas
+    lipidios = 0.0536 * quantidadeCereaisLeguminosas
+    carboidrato = 0.2742 * quantidadeCereaisLeguminosas
+    fibra = 0.076 * quantidadeCereaisLeguminosas
+    agSaturados = 0.007 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.017 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0289 * quantidadeCereaisLeguminosas
+    sodio = 0.07 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "lentilha") {
+    energia = 1.3628 * quantidadeCereaisLeguminosas
+    proteina = 0.0902 * quantidadeCereaisLeguminosas
+    lipidios = 0.0267 * quantidadeCereaisLeguminosas
+    carboidrato = 0.2013 * quantidadeCereaisLeguminosas
+    fibra = 0.0586 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0041 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0039 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0333 * quantidadeCereaisLeguminosas
+    sodio = 0.02 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "sojaEmGrao") {
+    energia = 1.9634 * quantidadeCereaisLeguminosas
+    proteina = 0.1664 * quantidadeCereaisLeguminosas
+    lipidios = 0.1161 * quantidadeCereaisLeguminosas
+    carboidrato = 0.0993 * quantidadeCereaisLeguminosas
+    fibra = 0.06 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0171 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.008 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0514 * quantidadeCereaisLeguminosas
+    sodio = 0.01 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "feijaoDeSojaOrganico") {
+    energia = 1.9634 * quantidadeCereaisLeguminosas
+    proteina = 0.1664 * quantidadeCereaisLeguminosas
+    lipidios = 0.1161 * quantidadeCereaisLeguminosas
+    carboidrato = 0.0993 * quantidadeCereaisLeguminosas
+    fibra = 0.06 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0171 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.008 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0514 * quantidadeCereaisLeguminosas
+    sodio = 0.01 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "feijaoPretoMulatinhoRoxoRosinha") {
+    energia = 0.9741 * quantidadeCereaisLeguminosas
+    proteina = 0.0584 * quantidadeCereaisLeguminosas
+    lipidios = 0.0179 * quantidadeCereaisLeguminosas
+    carboidrato = 0.1505 * quantidadeCereaisLeguminosas
+    fibra = 0.0378 * quantidadeCereaisLeguminosas
+    agSaturados = 0.003 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.003 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0222 * quantidadeCereaisLeguminosas
+    sodio = 0.052 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "feijaoOrganico") {
+    energia = 0.9741 * quantidadeCereaisLeguminosas
+    proteina = 0.0584 * quantidadeCereaisLeguminosas
+    lipidios = 0.0179 * quantidadeCereaisLeguminosas
+    carboidrato = 0.1505 * quantidadeCereaisLeguminosas
+    fibra = 0.0378 * quantidadeCereaisLeguminosas
+    agSaturados = 0.003 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.003 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0222 * quantidadeCereaisLeguminosas
+    sodio = 0.052 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "quireraNaoEspecificada") {
+    energia = 0.6295 * quantidadeCereaisLeguminosas
+    proteina = 0.0124 * quantidadeCereaisLeguminosas
+    lipidios = 0.0031 * quantidadeCereaisLeguminosas
+    carboidrato = 0.135 * quantidadeCereaisLeguminosas
+    fibra = 0.0067 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0003 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0029 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0074 * quantidadeCereaisLeguminosas
+    sodio = 0.0501 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "pipocaLight") {
+    energia = 4.4594 * quantidadeCereaisLeguminosas
+    proteina = 0.1077 * quantidadeCereaisLeguminosas
+    lipidios = 0.1778 * quantidadeCereaisLeguminosas
+    carboidrato = 0.6485 * quantidadeCereaisLeguminosas
+    fibra = 0.1207 * quantidadeCereaisLeguminosas
+    agSaturados = 0.0375 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0072 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0267 * quantidadeCereaisLeguminosas
+    sodio = 10.7251 * quantidadeCereaisLeguminosas
+  }
+  if (cereaisLeguminosas === "quinoa") {
+    energia = 1.3547 * quantidadeCereaisLeguminosas
+    proteina = 0.0437 * quantidadeCereaisLeguminosas
+    lipidios = 0.0433 * quantidadeCereaisLeguminosas
+    carboidrato = 0.1983 * quantidadeCereaisLeguminosas
+    fibra = 0.0216 * quantidadeCereaisLeguminosas
+    agSaturados = 0.006 * quantidadeCereaisLeguminosas
+    acucarTotal = 0.0189 * quantidadeCereaisLeguminosas
+    acucarDeAdicao = 0 * quantidadeCereaisLeguminosas
+    ferro = 0.0141 * quantidadeCereaisLeguminosas
+    sodio = 0.0427 * quantidadeCereaisLeguminosas
   }
   // Exibir resultados na página
   document.getElementById("resultadoEnergia").textContent = energia.toFixed(2) + " kcal";
@@ -373,4 +769,260 @@ function calcularEnlatadosConservas() {
   document.getElementById("resultadoAcucarDeAdicaofield11").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield11").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield11").textContent = sodio.toFixed(2) + " mg";
+}
+
+function calcularAvesOvos() {
+  // Obter valores selecionados pelo usuário
+  let avesOvos = document.getElementById("avesOvos").value;
+  let quantidadeAvesOvos = parseFloat(document.getElementById("quantidadeAvesOvos").value);
+
+  // Fazer o cálculo com base nos valores selecionados
+  if (avesOvos === "frangoInteiro") {
+    energia = 2.39 * quantidadeAvesOvos
+    proteina = 0.273 * quantidadeAvesOvos
+    lipidios = 0.136 * quantidadeAvesOvos
+    carboidrato = 0 * quantidadeAvesOvos
+    fibra = 0 * quantidadeAvesOvos
+    agSaturados = 0.0379 * quantidadeAvesOvos
+    acucarTotal = 0 * quantidadeAvesOvos
+    acucarDeAdicao = 0 * quantidadeAvesOvos
+    ferro = 0.0126 * quantidadeAvesOvos
+    sodio = 0.82 * quantidadeAvesOvos
+  }
+
+  // Exibir resultados na página
+  document.getElementById("resultadoEnergiafield12").textContent = energia.toFixed(2) + " kcal";
+  document.getElementById("resultadoProteinafield12").textContent = proteina.toFixed(2) + " g";
+  document.getElementById("resultadoLipidiosfield12").textContent = lipidios.toFixed(2) + " g";
+  document.getElementById("resultadoCarboidratofield12").textContent = carboidrato.toFixed(2) + " g";
+  document.getElementById("resultadoFibrafield12").textContent = fibra.toFixed(2) + " g";
+  document.getElementById("resultadoAGSaturadosfield12").textContent = agSaturados.toFixed(2) + " g";
+  document.getElementById("resultadoAcucarTotalfield12").textContent = acucarTotal.toFixed(2) + " g";
+  document.getElementById("resultadoAcucarDeAdicaofield12").textContent = acucarDeAdicao.toFixed(2) + " g";
+  document.getElementById("resultadoFerrofield12").textContent = ferro.toFixed(2) + " mg";
+  document.getElementById("resultadoSodiofield12").textContent = sodio.toFixed(2) + " mg";
+}
+
+function calcularLaticinios() {
+  // Obter valores selecionados pelo usuário
+  let laticinios = document.getElementById("laticinios").value;
+  let quantidadeLaticinios = parseFloat(document.getElementById("quantidadeLaticinios").value);
+
+  // Fazer o cálculo com base nos valores selecionados
+  if (laticinios === "leiteDeVacaIntegral") {
+    energia = 0.6003 * quantidadeLaticinios
+    proteina = 0.0322 * quantidadeLaticinios
+    lipidios = 0.0325 * quantidadeLaticinios
+    carboidrato = 0.0452 * quantidadeLaticinios
+    fibra = 0 * quantidadeLaticinios
+    agSaturados = 0.0187 * quantidadeLaticinios
+    acucarTotal = 0.0526 * quantidadeLaticinios
+    acucarDeAdicao = 0 * quantidadeLaticinios
+    ferro = 0.0003 * quantidadeLaticinios
+    sodio = 0.4002 * quantidadeLaticinios
+  }
+
+  // Exibir resultados na página
+  document.getElementById("resultadoEnergiafield13").textContent = energia.toFixed(2) + " kcal";
+  document.getElementById("resultadoProteinafield13").textContent = proteina.toFixed(2) + " g";
+  document.getElementById("resultadoLipidiosfield13").textContent = lipidios.toFixed(2) + " g";
+  document.getElementById("resultadoCarboidratofield13").textContent = carboidrato.toFixed(2) + " g";
+  document.getElementById("resultadoFibrafield13").textContent = fibra.toFixed(2) + " g";
+  document.getElementById("resultadoAGSaturadosfield13").textContent = agSaturados.toFixed(2) + " g";
+  document.getElementById("resultadoAcucarTotalfield13").textContent = acucarTotal.toFixed(2) + " g";
+  document.getElementById("resultadoAcucarDeAdicaofield13").textContent = acucarDeAdicao.toFixed(2) + " g";
+  document.getElementById("resultadoFerrofield13").textContent = ferro.toFixed(2) + " mg";
+  document.getElementById("resultadoSodiofield13").textContent = sodio.toFixed(2) + " mg";
+}
+
+function calcularPanificados() {
+  // Obter valores selecionados pelo usuário
+  let panificados = document.getElementById("panificados").value;
+  let quantidadePanificados = parseFloat(document.getElementById("quantidadePanificados").value);
+
+  // Fazer o cálculo com base nos valores selecionados
+  if (panificados === "paoDeHamburguer") {
+    energia = 2.79 * quantidadePanificados
+    proteina = 0.095 * quantidadePanificados
+    lipidios = 0.0433 * quantidadePanificados
+    carboidrato = 0.4945 * quantidadePanificados
+    fibra = 0.021 * quantidadePanificados
+    agSaturados = 0.0109 * quantidadePanificados
+    acucarTotal = 0.0628 * quantidadePanificados
+    acucarDeAdicao = 0.0631 * quantidadePanificados
+    ferro = 0.0332 * quantidadePanificados
+    sodio = 4.79 * quantidadePanificados
+  }
+
+  // Exibir resultados na página
+  document.getElementById("resultadoEnergiafield14").textContent = energia.toFixed(2) + " kcal";
+  document.getElementById("resultadoProteinafield14").textContent = proteina.toFixed(2) + " g";
+  document.getElementById("resultadoLipidiosfield14").textContent = lipidios.toFixed(2) + " g";
+  document.getElementById("resultadoCarboidratofield14").textContent = carboidrato.toFixed(2) + " g";
+  document.getElementById("resultadoFibrafield14").textContent = fibra.toFixed(2) + " g";
+  document.getElementById("resultadoAGSaturadosfield14").textContent = agSaturados.toFixed(2) + " g";
+  document.getElementById("resultadoAcucarTotalfield14").textContent = acucarTotal.toFixed(2) + " g";
+  document.getElementById("resultadoAcucarDeAdicaofield14").textContent = acucarDeAdicao.toFixed(2) + " g";
+  document.getElementById("resultadoFerrofield14").textContent = ferro.toFixed(2) + " mg";
+  document.getElementById("resultadoSodiofield14").textContent = sodio.toFixed(2) + " mg";
+}
+
+function calcularCarnesIndustrializadas() {
+  // Obter valores selecionados pelo usuário
+  let carnesIndustrializadas = document.getElementById("carnesIndustrializadas").value;
+  let quantidadeCarnesIndustrializadas = parseFloat(document.getElementById("quantidadeCarnesIndustrializadas").value);
+
+  // Fazer o cálculo com base nos valores selecionados
+  if (carnesIndustrializadas === "carneSecaCozida") {
+    energia = 3.13 * quantidadeCarnesIndustrializadas
+    proteina = 0.269 * quantidadeCarnesIndustrializadas
+    lipidios = 0.219 * quantidadeCarnesIndustrializadas
+    carboidrato = 0 * quantidadeCarnesIndustrializadas
+    fibra = 0 * quantidadeCarnesIndustrializadas
+    agSaturados = 0.105 * quantidadeCarnesIndustrializadas
+    acucarTotal = 0 * quantidadeCarnesIndustrializadas
+    acucarDeAdicao = 0 * quantidadeCarnesIndustrializadas
+    ferro = 0.019 * quantidadeCarnesIndustrializadas
+    sodio = 19.43 * quantidadeCarnesIndustrializadas
+  }
+
+  // Exibir resultados na página
+  document.getElementById("resultadoEnergiafield15").textContent = energia.toFixed(2) + " kcal";
+  document.getElementById("resultadoProteinafield15").textContent = proteina.toFixed(2) + " g";
+  document.getElementById("resultadoLipidiosfield15").textContent = lipidios.toFixed(2) + " g";
+  document.getElementById("resultadoCarboidratofield15").textContent = carboidrato.toFixed(2) + " g";
+  document.getElementById("resultadoFibrafield15").textContent = fibra.toFixed(2) + " g";
+  document.getElementById("resultadoAGSaturadosfield15").textContent = agSaturados.toFixed(2) + " g";
+  document.getElementById("resultadoAcucarTotalfield15").textContent = acucarTotal.toFixed(2) + " g";
+  document.getElementById("resultadoAcucarDeAdicaofield15").textContent = acucarDeAdicao.toFixed(2) + " g";
+  document.getElementById("resultadoFerrofield15").textContent = ferro.toFixed(2) + " mg";
+  document.getElementById("resultadoSodiofield15").textContent = sodio.toFixed(2) + " mg";
+}
+
+function calcularBebidasNaoAlcoolicasInfusoes() {
+  // Obter valores selecionados pelo usuário
+  let bebidasNaoAlcoolicasInfusoes = document.getElementById("bebidasNaoAlcoolicasInfusoes").value;
+  let quantidadeBebidasNaoAlcoolicasInfusoes = parseFloat(document.getElementById("quantidadeBebidasNaoAlcoolicasInfusoes").value);
+
+  // Fazer o cálculo com base nos valores selecionados
+  if (bebidasNaoAlcoolicasInfusoes === "refrigeranteDeColaTradicional") {
+    energia = 0.3687 * quantidadeBebidasNaoAlcoolicasInfusoes
+    proteina = 0.0007 * quantidadeBebidasNaoAlcoolicasInfusoes
+    lipidios = 0.0002 * quantidadeBebidasNaoAlcoolicasInfusoes
+    carboidrato = 0.0953 * quantidadeBebidasNaoAlcoolicasInfusoes
+    fibra = 0 * quantidadeBebidasNaoAlcoolicasInfusoes
+    agSaturados = 0 * quantidadeBebidasNaoAlcoolicasInfusoes
+    acucarTotal = 0.1056 * quantidadeBebidasNaoAlcoolicasInfusoes
+    acucarDeAdicao = 0.0953 * quantidadeBebidasNaoAlcoolicasInfusoes
+    ferro = 0.0011 * quantidadeBebidasNaoAlcoolicasInfusoes
+    sodio = 0.0399 * quantidadeBebidasNaoAlcoolicasInfusoes
+  }
+
+  // Exibir resultados na página
+  document.getElementById("resultadoEnergiafield16").textContent = energia.toFixed(2) + " kcal";
+  document.getElementById("resultadoProteinafield16").textContent = proteina.toFixed(2) + " g";
+  document.getElementById("resultadoLipidiosfield16").textContent = lipidios.toFixed(2) + " g";
+  document.getElementById("resultadoCarboidratofield16").textContent = carboidrato.toFixed(2) + " g";
+  document.getElementById("resultadoFibrafield16").textContent = fibra.toFixed(2) + " g";
+  document.getElementById("resultadoAGSaturadosfield16").textContent = agSaturados.toFixed(2) + " g";
+  document.getElementById("resultadoAcucarTotalfield16").textContent = acucarTotal.toFixed(2) + " g";
+  document.getElementById("resultadoAcucarDeAdicaofield16").textContent = acucarDeAdicao.toFixed(2) + " g";
+  document.getElementById("resultadoFerrofield16").textContent = ferro.toFixed(2) + " mg";
+  document.getElementById("resultadoSodiofield16").textContent = sodio.toFixed(2) + " mg";
+}
+
+function calcularBebidasAlcoolicas() {
+  // Obter valores selecionados pelo usuário
+  let bebidasAlcoolicas = document.getElementById("bebidasAlcoolicas").value;
+  let quantidadeBebidasAlcoolicas = parseFloat(document.getElementById("quantidadeBebidasAlcoolicas").value);
+
+  // Fazer o cálculo com base nos valores selecionados
+  if (bebidasAlcoolicas === "cervejaComOuSemAlcool") {
+    energia = 0.4319 * quantidadeBebidasAlcoolicas
+    proteina = 0.0046 * quantidadeBebidasAlcoolicas
+    lipidios = 0 * quantidadeBebidasAlcoolicas
+    carboidrato = 0.0357 * quantidadeBebidasAlcoolicas
+    fibra = 0 * quantidadeBebidasAlcoolicas
+    agSaturados = 0 * quantidadeBebidasAlcoolicas
+    acucarTotal = 0 * quantidadeBebidasAlcoolicas
+    acucarDeAdicao = 0 * quantidadeBebidasAlcoolicas
+    ferro = 0.0002 * quantidadeBebidasAlcoolicas
+    sodio = 0.0402 * quantidadeBebidasAlcoolicas
+  }
+
+  // Exibir resultados na página
+  document.getElementById("resultadoEnergiafield17").textContent = energia.toFixed(2) + " kcal";
+  document.getElementById("resultadoProteinafield17").textContent = proteina.toFixed(2) + " g";
+  document.getElementById("resultadoLipidiosfield17").textContent = lipidios.toFixed(2) + " g";
+  document.getElementById("resultadoCarboidratofield17").textContent = carboidrato.toFixed(2) + " g";
+  document.getElementById("resultadoFibrafield17").textContent = fibra.toFixed(2) + " g";
+  document.getElementById("resultadoAGSaturadosfield17").textContent = agSaturados.toFixed(2) + " g";
+  document.getElementById("resultadoAcucarTotalfield17").textContent = acucarTotal.toFixed(2) + " g";
+  document.getElementById("resultadoAcucarDeAdicaofield17").textContent = acucarDeAdicao.toFixed(2) + " g";
+  document.getElementById("resultadoFerrofield17").textContent = ferro.toFixed(2) + " mg";
+  document.getElementById("resultadoSodiofield17").textContent = sodio.toFixed(2) + " mg";
+}
+
+function calcularOleosGorduras() {
+  // Obter valores selecionados pelo usuário
+  let oleosGorduras = document.getElementById("oleosGorduras").value;
+  let quantidadeOleosGorduras = parseFloat(document.getElementById("quantidadeOleosGorduras").value);
+
+  // Fazer o cálculo com base nos valores selecionados
+  if (oleosGorduras === "azeiteDeOliva") {
+    energia = 8.8781 * quantidadeOleosGorduras
+    proteina = 0 * quantidadeOleosGorduras
+    lipidios = 1.0043 * quantidadeOleosGorduras
+    carboidrato = 0 * quantidadeOleosGorduras
+    fibra = 0 * quantidadeOleosGorduras
+    agSaturados = 0.1387 * quantidadeOleosGorduras
+    acucarTotal = 0 * quantidadeOleosGorduras
+    acucarDeAdicao = 0 * quantidadeOleosGorduras
+    ferro = 0.0056 * quantidadeOleosGorduras
+    sodio = 0.0201 * quantidadeOleosGorduras
+  }
+
+  // Exibir resultados na página
+  document.getElementById("resultadoEnergiafield18").textContent = energia.toFixed(2) + " kcal";
+  document.getElementById("resultadoProteinafield18").textContent = proteina.toFixed(2) + " g";
+  document.getElementById("resultadoLipidiosfield18").textContent = lipidios.toFixed(2) + " g";
+  document.getElementById("resultadoCarboidratofield18").textContent = carboidrato.toFixed(2) + " g";
+  document.getElementById("resultadoFibrafield18").textContent = fibra.toFixed(2) + " g";
+  document.getElementById("resultadoAGSaturadosfield18").textContent = agSaturados.toFixed(2) + " g";
+  document.getElementById("resultadoAcucarTotalfield18").textContent = acucarTotal.toFixed(2) + " g";
+  document.getElementById("resultadoAcucarDeAdicaofield18").textContent = acucarDeAdicao.toFixed(2) + " g";
+  document.getElementById("resultadoFerrofield18").textContent = ferro.toFixed(2) + " mg";
+  document.getElementById("resultadoSodiofield18").textContent = sodio.toFixed(2) + " mg";
+}
+
+function calcularMiscelaneas() {
+  // Obter valores selecionados pelo usuário
+  let miscelaneas = document.getElementById("miscelaneas").value;
+  let quantidadeMiscelaneas = parseFloat(document.getElementById("quantidadeMiscelaneas").value);
+
+  // Fazer o cálculo com base nos valores selecionados
+  if (miscelaneas === "salgadinho") {
+    energia = 2.746 * quantidadeMiscelaneas
+    proteina = 0.1341 * quantidadeMiscelaneas
+    lipidios = 0.1688 * quantidadeMiscelaneas
+    carboidrato = 0.1654 * quantidadeMiscelaneas
+    fibra = 0.0088 * quantidadeMiscelaneas
+    agSaturados = 0.0461 * quantidadeMiscelaneas
+    acucarTotal = 0.0268 * quantidadeMiscelaneas
+    acucarDeAdicao = 0.0182 * quantidadeMiscelaneas
+    ferro = 0.0205 * quantidadeMiscelaneas
+    sodio = 1.6516 * quantidadeMiscelaneas
+  }
+
+  // Exibir resultados na página
+  document.getElementById("resultadoEnergiafield19").textContent = energia.toFixed(2) + " kcal";
+  document.getElementById("resultadoProteinafield19").textContent = proteina.toFixed(2) + " g";
+  document.getElementById("resultadoLipidiosfield19").textContent = lipidios.toFixed(2) + " g";
+  document.getElementById("resultadoCarboidratofield19").textContent = carboidrato.toFixed(2) + " g";
+  document.getElementById("resultadoFibrafield19").textContent = fibra.toFixed(2) + " g";
+  document.getElementById("resultadoAGSaturadosfield19").textContent = agSaturados.toFixed(2) + " g";
+  document.getElementById("resultadoAcucarTotalfield19").textContent = acucarTotal.toFixed(2) + " g";
+  document.getElementById("resultadoAcucarDeAdicaofield19").textContent = acucarDeAdicao.toFixed(2) + " g";
+  document.getElementById("resultadoFerrofield19").textContent = ferro.toFixed(2) + " mg";
+  document.getElementById("resultadoSodiofield19").textContent = sodio.toFixed(2) + " mg";
 }
