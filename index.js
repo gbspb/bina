@@ -449,7 +449,40 @@ function calcularCereaisLeguminosas() {
   document.getElementById("resultadoAcucarDeAdicao").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerro").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodio").textContent = sodio.toFixed(2) + " mg";
-}
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia1").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato1").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao1").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina1").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios1").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados1").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra1").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio1").textContent = porcentagemArredondadaSodio + "%";
+
+}//OK
 
 function calcularHortalicasTuberosas() {
   // Obter valores selecionados pelo usuário
@@ -458,6 +491,150 @@ function calcularHortalicasTuberosas() {
 
   // Fazer o cálculo com base nos valores selecionados
   if (hortalicasTuberosas === "batataInglesaCrua") {
+    energia = 0.86 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.001 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2001 * quantidadeHortalicasTuberosas
+    fibra = 0.0205 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0086 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0031 * quantidadeHortalicasTuberosas
+    sodio = 0.05 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataInglesaCozida") {
+    energia = 0.86 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.001 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2001 * quantidadeHortalicasTuberosas
+    fibra = 0.0205 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0086 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0031 * quantidadeHortalicasTuberosas
+    sodio = 0.05 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataInglesaGrelhadaBrasaChurrasco") {
+    energia = 0.86 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.001 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2001 * quantidadeHortalicasTuberosas
+    fibra = 0.0205 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0086 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0031 * quantidadeHortalicasTuberosas
+    sodio = 0.05 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataInglesaAssada") {
+    energia = 0.86 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.001 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2001 * quantidadeHortalicasTuberosas
+    fibra = 0.0205 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0086 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0031 * quantidadeHortalicasTuberosas
+    sodio = 0.05 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataInglesaFrita") {
+    energia = 2.635 * quantidadeHortalicasTuberosas
+    proteina = 0.0287 * quantidadeHortalicasTuberosas
+    lipidios = 0.1364 * quantidadeHortalicasTuberosas
+    carboidrato = 0.336 * quantidadeHortalicasTuberosas
+    fibra = 0.0344 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0215 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0144 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0053 * quantidadeHortalicasTuberosas
+    sodio = 0.084 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataInglesaRefogada") {
+    energia = 1.1174 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.0301 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2001 * quantidadeHortalicasTuberosas
+    fibra = 0.0205 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0048 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0086 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0031 * quantidadeHortalicasTuberosas
+    sodio = 0.05 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataInglesaMolhoVermelho") {
+    energia = 0.736 * quantidadeHortalicasTuberosas
+    proteina = 0.0163 * quantidadeHortalicasTuberosas
+    lipidios = 0.0012 * quantidadeHortalicasTuberosas
+    carboidrato = 0.1708 * quantidadeHortalicasTuberosas
+    fibra = 0.0194 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0154 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0045 * quantidadeHortalicasTuberosas
+    sodio = 1.088 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataInglesaAoMolhoBranco") {
+    energia = 1.0139 * quantidadeHortalicasTuberosas
+    proteina = 0.0215 * quantidadeHortalicasTuberosas
+    lipidios = 0.0257 * quantidadeHortalicasTuberosas
+    carboidrato = 0.1786 * quantidadeHortalicasTuberosas
+    fibra = 0.0168 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0155 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0172 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0032 * quantidadeHortalicasTuberosas
+    sodio = 0.2492 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataInglesaAoAlhoEOleo") {
+    energia = 2.635 * quantidadeHortalicasTuberosas
+    proteina = 0.0287 * quantidadeHortalicasTuberosas
+    lipidios = 0.1364 * quantidadeHortalicasTuberosas
+    carboidrato = 0.336 * quantidadeHortalicasTuberosas
+    fibra = 0.0344 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0215 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0144 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0053 * quantidadeHortalicasTuberosas
+    sodio = 0.084 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataInglesaComManteigaOleo") {
+    energia = 1.1174 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.0301 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2001 * quantidadeHortalicasTuberosas
+    fibra = 0.0205 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0048 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0086 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0031 * quantidadeHortalicasTuberosas
+    sodio = 0.05 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataInglesaEnsopada") {
+    energia = 1.1174 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.0301 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2001 * quantidadeHortalicasTuberosas
+    fibra = 0.0205 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0048 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0086 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0031 * quantidadeHortalicasTuberosas
+    sodio = 0.05 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataInglesaSopa") {
+    energia = 0.3144 * quantidadeHortalicasTuberosas
+    proteina = 0.0095 * quantidadeHortalicasTuberosas
+    lipidios = 0.0012 * quantidadeHortalicasTuberosas
+    carboidrato = 0.0701 * quantidadeHortalicasTuberosas
+    fibra = 0.0071 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0004 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0328 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0.0252 * quantidadeHortalicasTuberosas
+    ferro = 0.0029 * quantidadeHortalicasTuberosas
+    sodio = 3.1043 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataInglesa") {
     energia = 0.86 * quantidadeHortalicasTuberosas
     proteina = 0.0171 * quantidadeHortalicasTuberosas
     lipidios = 0.001 * quantidadeHortalicasTuberosas
@@ -481,6 +658,39 @@ function calcularHortalicasTuberosas() {
   document.getElementById("resultadoAcucarDeAdicaofield2").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield2").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield2").textContent = sodio.toFixed(2) + " mg";
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia2").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato2").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao2").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina2").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios2").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados2").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra2").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio2").textContent = porcentagemArredondadaSodio + "%";
+
 }
 
 function calcularFarinhasFeculasMassas() {
@@ -513,6 +723,39 @@ function calcularFarinhasFeculasMassas() {
   document.getElementById("resultadoAcucarDeAdicaofield3").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield3").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield3").textContent = sodio.toFixed(2) + " mg";
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia3").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato3").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao3").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina3").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios3").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados3").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra3").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio3").textContent = porcentagemArredondadaSodio + "%";
+
 }
 
 function calcularCocosCastanhasNozes() {
@@ -545,6 +788,39 @@ function calcularCocosCastanhasNozes() {
   document.getElementById("resultadoAcucarDeAdicaofield4").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield4").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield4").textContent = sodio.toFixed(2) + " mg";
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia4").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato4").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao4").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina4").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios4").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados4").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra4").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio4").textContent = porcentagemArredondadaSodio + "%";
+
 }
 
 function calcularHortalicasFolhosasFrutosasOutras() {
@@ -577,6 +853,39 @@ function calcularHortalicasFolhosasFrutosasOutras() {
   document.getElementById("resultadoAcucarDeAdicaofield5").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield5").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield5").textContent = sodio.toFixed(2) + " mg";
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia5").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato5").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao5").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina5").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios5").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados5").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra5").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio5").textContent = porcentagemArredondadaSodio + "%";
+
 }
 
 function calcularFrutas() {
@@ -609,6 +918,39 @@ function calcularFrutas() {
   document.getElementById("resultadoAcucarDeAdicaofield6").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield6").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield6").textContent = sodio.toFixed(2) + " mg";
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia6").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato6").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao6").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina6").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios6").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados6").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra6").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio6").textContent = porcentagemArredondadaSodio + "%";
+
 }
 
 function calcularAcucaresProdutosDeConfeitaria() {
@@ -641,6 +983,39 @@ function calcularAcucaresProdutosDeConfeitaria() {
   document.getElementById("resultadoAcucarDeAdicaofield7").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield7").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield7").textContent = sodio.toFixed(2) + " mg";
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia7").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato7").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao7").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina7").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios7").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados7").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra7").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio7").textContent = porcentagemArredondadaSodio + "%";
+
 }
 
 function calcularSaisCondimentos() {
@@ -673,6 +1048,39 @@ function calcularSaisCondimentos() {
   document.getElementById("resultadoAcucarDeAdicaofield8").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield8").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield8").textContent = sodio.toFixed(2) + " mg";
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia8").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato8").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao8").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina8").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios8").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados8").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra8").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio8").textContent = porcentagemArredondadaSodio + "%";
+
 }
 
 function calcularCarnesVisceras() {
@@ -705,6 +1113,39 @@ function calcularCarnesVisceras() {
   document.getElementById("resultadoAcucarDeAdicaofield9").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield9").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield9").textContent = sodio.toFixed(2) + " mg";
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia9").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato9").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao9").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina9").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios9").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados9").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra9").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio9").textContent = porcentagemArredondadaSodio + "%";
+
 }
 
 function calcularPescadosFrutosDoMar() {
@@ -737,6 +1178,39 @@ function calcularPescadosFrutosDoMar() {
   document.getElementById("resultadoAcucarDeAdicaofield10").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield10").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield10").textContent = sodio.toFixed(2) + " mg";
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia10").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato10").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao10").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina10").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios10").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados10").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra10").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio10").textContent = porcentagemArredondadaSodio + "%";
+
 }
 
 function calcularEnlatadosConservas() {
@@ -769,6 +1243,39 @@ function calcularEnlatadosConservas() {
   document.getElementById("resultadoAcucarDeAdicaofield11").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield11").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield11").textContent = sodio.toFixed(2) + " mg";
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia11").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato11").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao11").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina11").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios11").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados11").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra11").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio11").textContent = porcentagemArredondadaSodio + "%";
+
 }
 
 function calcularAvesOvos() {
@@ -801,6 +1308,39 @@ function calcularAvesOvos() {
   document.getElementById("resultadoAcucarDeAdicaofield12").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield12").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield12").textContent = sodio.toFixed(2) + " mg";
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia12").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato12").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao12").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina12").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios12").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados12").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra12").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio12").textContent = porcentagemArredondadaSodio + "%";
+
 }
 
 function calcularLaticinios() {
@@ -833,6 +1373,39 @@ function calcularLaticinios() {
   document.getElementById("resultadoAcucarDeAdicaofield13").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield13").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield13").textContent = sodio.toFixed(2) + " mg";
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia13").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato13").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao13").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina13").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios13").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados13").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra13").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio13").textContent = porcentagemArredondadaSodio + "%";
+
 }
 
 function calcularPanificados() {
@@ -865,6 +1438,39 @@ function calcularPanificados() {
   document.getElementById("resultadoAcucarDeAdicaofield14").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield14").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield14").textContent = sodio.toFixed(2) + " mg";
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia14").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato14").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao14").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina14").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios14").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados14").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra14").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio14").textContent = porcentagemArredondadaSodio + "%";
+
 }
 
 function calcularCarnesIndustrializadas() {
@@ -897,6 +1503,39 @@ function calcularCarnesIndustrializadas() {
   document.getElementById("resultadoAcucarDeAdicaofield15").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield15").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield15").textContent = sodio.toFixed(2) + " mg";
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia15").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato15").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao15").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina15").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios15").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados15").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra15").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio15").textContent = porcentagemArredondadaSodio + "%";
+
 }
 
 function calcularBebidasNaoAlcoolicasInfusoes() {
@@ -929,6 +1568,39 @@ function calcularBebidasNaoAlcoolicasInfusoes() {
   document.getElementById("resultadoAcucarDeAdicaofield16").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield16").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield16").textContent = sodio.toFixed(2) + " mg";
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia16").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato16").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao16").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina16").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios16").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados16").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra16").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio16").textContent = porcentagemArredondadaSodio + "%";
+
 }
 
 function calcularBebidasAlcoolicas() {
@@ -961,6 +1633,39 @@ function calcularBebidasAlcoolicas() {
   document.getElementById("resultadoAcucarDeAdicaofield17").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield17").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield17").textContent = sodio.toFixed(2) + " mg";
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia17").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato17").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao17").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina17").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios17").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados17").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra17").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio17").textContent = porcentagemArredondadaSodio + "%";
+
 }
 
 function calcularOleosGorduras() {
@@ -993,6 +1698,39 @@ function calcularOleosGorduras() {
   document.getElementById("resultadoAcucarDeAdicaofield18").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield18").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield18").textContent = sodio.toFixed(2) + " mg";
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia18").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato18").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao18").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina18").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios18").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados18").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra18").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio18").textContent = porcentagemArredondadaSodio + "%";
+
 }
 
 function calcularMiscelaneas() {
@@ -1025,4 +1763,37 @@ function calcularMiscelaneas() {
   document.getElementById("resultadoAcucarDeAdicaofield19").textContent = acucarDeAdicao.toFixed(2) + " g";
   document.getElementById("resultadoFerrofield19").textContent = ferro.toFixed(2) + " mg";
   document.getElementById("resultadoSodiofield19").textContent = sodio.toFixed(2) + " mg";
+  //Exibir valores diários
+  const porcentagemEnergia = (energia / 2000) * 100;
+  const porcentagemArredondadaEnergia = porcentagemEnergia.toFixed(3);
+  document.getElementById("vdEnergia19").textContent = porcentagemArredondadaEnergia + "%";
+
+  const porcentagemCarboidrato = (carboidrato / 300) * 100;
+  const porcentagemArredondadaCarboidrato = porcentagemCarboidrato.toFixed(3);
+  document.getElementById("vdCarboidrato19").textContent = porcentagemArredondadaCarboidrato + "%";
+
+  const porcentagemAcucarDeAdicao = (acucarDeAdicao / 50) * 100;
+  const porcentagemArredondadaAcucarDeAdicao = porcentagemAcucarDeAdicao.toFixed(3);
+  document.getElementById("vdAcucarDeAdicao19").textContent = porcentagemArredondadaAcucarDeAdicao + "%";
+
+  const porcentagemProteina = (proteina / 50) * 100;
+  const porcentagemArredondadaProteina = porcentagemProteina.toFixed(3);
+  document.getElementById("vdProteina19").textContent = porcentagemArredondadaProteina + "%";
+
+  const porcentagemLipidios = (lipidios / 65) * 100;
+  const porcentagemArredondadaLipidios = porcentagemLipidios.toFixed(3);
+  document.getElementById("vdLipidios19").textContent = porcentagemArredondadaLipidios + "%";
+
+  const porcentagemAGSaturados = (agSaturados / 20) * 100;
+  const porcentagemArredondadaAGSaturados = porcentagemAGSaturados.toFixed(3);
+  document.getElementById("vdAGSaturados19").textContent = porcentagemArredondadaAGSaturados + "%";
+
+  const porcentagemFibra = (fibra / 25) * 100;
+  const porcentagemArredondadaFibra = porcentagemFibra.toFixed(3);
+  document.getElementById("vdFibra19").textContent = porcentagemArredondadaFibra + "%";
+
+  const porcentagemSodio = (sodio / 2000) * 100;
+  const porcentagemArredondadaSodio = porcentagemSodio.toFixed(3);
+  document.getElementById("vdSodio19").textContent = porcentagemArredondadaSodio + "%";
+
 }

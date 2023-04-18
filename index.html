@@ -60,57 +60,134 @@
 
       <button form="form1" type="button" onclick="calcularCereaisLeguminosas()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergia">Energia:</label>
-          <span id="resultadoEnergia"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteina">Proteína:</label>
-          <span id="resultadoProteina"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergia">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergia"></span>
+          </td>
+          <td>
+            <span id="vdEnergia1"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidios">Lipídios totais:</label>
-          <span id="resultadoLipidios"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidrato">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidrato"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato1"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidrato">Carboidrato:</label>
-          <span id="resultadoCarboidrato"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotal">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotal"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibra">Fibra alimentar total:</label>
-          <span id="resultadoFibra"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicao">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicao"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao1"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturados">AG saturados:</label>
-          <span id="resultadoAGSaturados"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoProteina">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteina"></span>
+          </td>
+          <td>
+            <span id="vdProteina1"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotal">Açucar total:</label>
-          <span id="resultadoAcucarTotal"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidios">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidios"></span>
+          </td>
+          <td>
+            <span id="vdLipidios1"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicao">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicao"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturados">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturados"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados1"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerro">Ferro:</label>
-          <span id="resultadoFerro"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibra">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibra"></span>
+          </td>
+          <td>
+            <span id="vdFibra1"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodio">Sódio:</label>
-          <span id="resultadoSodio"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerro">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerro"></span>
+          </td>
+          <td>
+            <span id="vdFerro1"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodio">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodio"></span>
+          </td>
+          <td>
+            <span id="vdSodio1"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
@@ -121,6 +198,18 @@
       <select id="hortalicasTuberosas" required>
         <option value="" selected disabled>--Selecione--</option>
         <option value="batataInglesaCrua">Batata-inglesa / Crua</option>
+        <option value="batataInglesaCozida">Batata-inglesa / Cozida</option>
+        <option value="batataInglesaGrelhadaBrasaChurrasco">Batata-inglesa / Grelhada/brasa/churrasco</option>
+        <option value="batataInglesaAssada">Batata-inglesa / Assada</option>
+        <option value="batataInglesaFrita">Batata-inglesa / Frita</option>
+        <option value="batataInglesaRefogada">Batata-inglesa / Refogada</option>
+        <option value="batataInglesaMolhoVermelho">Batata-inglesa / Molho vermelho</option>
+        <option value="batataInglesaAoMolhoBranco">Batata-inglesa / Ao molho branco</option>
+        <option value="batataInglesaAoAlhoEOleo">Batata-inglesa / Ao alho e óleo</option>
+        <option value="batataInglesaComManteigaOleo">Batata-inglesa / Com manteiga/óleo</option>
+        <option value="batataInglesaEnsopada">Batata-inglesa / Ensopada</option>
+        <option value="batataInglesaSopa">Batata-inglesa / Sopa</option>
+        <option value="batataInglesa">Batata-inglesa / Não se aplica</option>
       </select>
 
       <label for="quantidadeHortalicasTuberosas">Quantidade em gramas:</label>
@@ -128,57 +217,134 @@
 
       <button form="form2" type="button" onclick="calcularHortalicasTuberosas()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergiafield2">Energia:</label>
-          <span id="resultadoEnergiafield2"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteinafield2">Proteína:</label>
-          <span id="resultadoProteinafield2"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergiafield2">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergiafield2"></span>
+          </td>
+          <td>
+            <span id="vdEnergia2"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidiosfield2">Lipídios totais:</label>
-          <span id="resultadoLipidiosfield2"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidratofield2">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidratofield2"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato2"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidratofield2">Carboidrato:</label>
-          <span id="resultadoCarboidratofield2"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotalfield2">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotalfield2"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibrafield2">Fibra alimentar total:</label>
-          <span id="resultadoFibrafield2"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicaofield2">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicaofield2"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao2"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturadosfield2">AG saturados:</label>
-          <span id="resultadoAGSaturadosfield2"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoProteinafield2">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteinafield2"></span>
+          </td>
+          <td>
+            <span id="vdProteina2"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotalfield2">Açucar total:</label>
-          <span id="resultadoAcucarTotalfield2"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidiosfield2">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidiosfield2"></span>
+          </td>
+          <td>
+            <span id="vdLipidios2"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicaofield2">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicaofield2"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturadosfield2">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturadosfield2"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados2"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerrofield2">Ferro:</label>
-          <span id="resultadoFerrofield2"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibrafield2">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibrafield2"></span>
+          </td>
+          <td>
+            <span id="vdFibra2"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodiofield2">Sódio:</label>
-          <span id="resultadoSodiofield2"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerrofield2">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerrofield2"></span>
+          </td>
+          <td>
+            <span id="vdFerro2"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodiofield2">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodiofield2"></span>
+          </td>
+          <td>
+            <span id="vdSodio2"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
@@ -196,57 +362,134 @@
 
       <button form="form3" type="button" onclick="calcularFarinhasFeculasMassas()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergiafield3">Energia:</label>
-          <span id="resultadoEnergiafield3"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteinafield3">Proteína:</label>
-          <span id="resultadoProteinafield3"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergiafield3">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergiafield3"></span>
+          </td>
+          <td>
+            <span id="vdEnergia3"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidiosfield3">Lipídios totais:</label>
-          <span id="resultadoLipidiosfield3"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidratofield3">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidratofield3"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato3"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidratofield3">Carboidrato:</label>
-          <span id="resultadoCarboidratofield3"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotalfield3">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotalfield3"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibrafield3">Fibra alimentar total:</label>
-          <span id="resultadoFibrafield3"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicaofield3">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicaofield3"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao3"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturadosfield3">AG saturados:</label>
-          <span id="resultadoAGSaturadosfield3"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadfield3oProteina">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteinafield3"></span>
+          </td>
+          <td>
+            <span id="vdProteina3"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotalfield3">Açucar total:</label>
-          <span id="resultadoAcucarTotalfield3"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidiosfield3">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidiosfield3"></span>
+          </td>
+          <td>
+            <span id="vdLipidios3"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicaofield3">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicaofield3"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturadosfield3">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturadosfield3"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados3"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerrofield3">Ferro:</label>
-          <span id="resultadoFerrofield3"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibrafield3">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibrafield3"></span>
+          </td>
+          <td>
+            <span id="vdFibra3"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodiofield3">Sódio:</label>
-          <span id="resultadoSodiofield3"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerrofield3">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerrofield3"></span>
+          </td>
+          <td>
+            <span id="vdFerro3"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodiofield3">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodiofield3"></span>
+          </td>
+          <td>
+            <span id="vdSodio3"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
@@ -264,57 +507,134 @@
 
       <button form="form4" type="button" onclick="calcularCocosCastanhasNozes()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergiafield4">Energia:</label>
-          <span id="resultadoEnergiafield4"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteinafield4">Proteína:</label>
-          <span id="resultadoProteinafield4"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergiafield4">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergiafield4"></span>
+          </td>
+          <td>
+            <span id="vdEnergia4"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidiosfield4">Lipídios totais:</label>
-          <span id="resultadoLipidiosfield4"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidratofield4">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidratofield4"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato4"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidratofield4">Carboidrato:</label>
-          <span id="resultadoCarboidratofield4"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotalfield4">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotalfield4"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibrafield4">Fibra alimentar total:</label>
-          <span id="resultadoFibrafield4"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicaofield4">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicaofield4"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao4"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturadosfield4">AG saturados:</label>
-          <span id="resultadoAGSaturadosfield4"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoProteinafield4">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteinafield4"></span>
+          </td>
+          <td>
+            <span id="vdProteina4"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotalfield4">Açucar total:</label>
-          <span id="resultadoAcucarTotalfield4"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidiosfield4">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidiosfield4"></span>
+          </td>
+          <td>
+            <span id="vdLipidios4"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicaofield4">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicaofield4"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturadosfield4">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturadosfield4"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados4"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerrofield4">Ferro:</label>
-          <span id="resultadoFerrofield4"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibrafield4">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibrafield4"></span>
+          </td>
+          <td>
+            <span id="vdFibra4"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodiofield4">Sódio:</label>
-          <span id="resultadoSodiofield4"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerrofield4">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerrofield4"></span>
+          </td>
+          <td>
+            <span id="vdFerro4"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodiofield4">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodiofield4"></span>
+          </td>
+          <td>
+            <span id="vdSodio4"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
@@ -332,57 +652,134 @@
 
       <button form="form5" type="button" onclick="calcularHortalicasFolhosasFrutosasOutras()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergiafield5">Energia:</label>
-          <span id="resultadoEnergiafield5"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteinafield5">Proteína:</label>
-          <span id="resultadoProteinafield5"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergiafield5">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergiafield5"></span>
+          </td>
+          <td>
+            <span id="vdEnergia5"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidiosfield5">Lipídios totais:</label>
-          <span id="resultadoLipidiosfield5"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidratofield5">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidratofield5"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato5"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidratofield5">Carboidrato:</label>
-          <span id="resultadoCarboidratofield5"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotalfield5">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotalfield5"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibrafield5">Fibra alimentar total:</label>
-          <span id="resultadoFibrafield5"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicaofield5">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicaofield5"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao5"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturadosfield5">AG saturados:</label>
-          <span id="resultadoAGSaturadosfield5"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoProteinafield5">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteinafield5"></span>
+          </td>
+          <td>
+            <span id="vdProteina5"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotalfield5">Açucar total:</label>
-          <span id="resultadoAcucarTotalfield5"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidiosfield5">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidiosfield5"></span>
+          </td>
+          <td>
+            <span id="vdLipidios5"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicaofield5">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicaofield5"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturadosfield5">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturadosfield5"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados5"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerrofield5">Ferro:</label>
-          <span id="resultadoFerrofield5"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibrafield5">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibrafield5"></span>
+          </td>
+          <td>
+            <span id="vdFibra5"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodiofield5">Sódio:</label>
-          <span id="resultadoSodiofield5"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerrofield5">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerrofield5"></span>
+          </td>
+          <td>
+            <span id="vdFerro5"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodiofield5">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodiofield5"></span>
+          </td>
+          <td>
+            <span id="vdSodio5"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
@@ -400,57 +797,134 @@
 
       <button form="form6" type="button" onclick="calcularFrutas()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergiafield6">Energia:</label>
-          <span id="resultadoEnergiafield6"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteinafield6">Proteína:</label>
-          <span id="resultadoProteinafield6"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergiafield6">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergiafield6"></span>
+          </td>
+          <td>
+            <span id="vdEnergia6"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidiosfield6">Lipídios totais:</label>
-          <span id="resultadoLipidiosfield6"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidratofield6">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidratofield6"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato6"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidratofield6">Carboidrato:</label>
-          <span id="resultadoCarboidratofield6"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotalfield6">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotalfield6"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibrafield6">Fibra alimentar total:</label>
-          <span id="resultadoFibrafield6"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicaofield6">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicaofield6"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao6"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturadosfield6">AG saturados:</label>
-          <span id="resultadoAGSaturadosfield6"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoProteinafield6">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteinafield6"></span>
+          </td>
+          <td>
+            <span id="vdProteina6"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotalfield6">Açucar total:</label>
-          <span id="resultadoAcucarTotalfield6"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidiosfield6">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidiosfield6"></span>
+          </td>
+          <td>
+            <span id="vdLipidios6"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicaofield6">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicaofield6"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturadosfield6">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturadosfield6"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados6"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerrofield6">Ferro:</label>
-          <span id="resultadoFerrofield6"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibrafield6">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibrafield6"></span>
+          </td>
+          <td>
+            <span id="vdFibra6"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodiofield6">Sódio:</label>
-          <span id="resultadoSodiofield6"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerrofield6">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerrofield6"></span>
+          </td>
+          <td>
+            <span id="vdFerro6"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodiofield6">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodiofield6"></span>
+          </td>
+          <td>
+            <span id="vdSodio6"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
@@ -468,57 +942,134 @@
 
       <button form="form7" type="button" onclick="calcularAcucaresProdutosDeConfeitaria()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergiafield7">Energia:</label>
-          <span id="resultadoEnergiafield7"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteinafield7">Proteína:</label>
-          <span id="resultadoProteinafield7"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergiafield7">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergiafield7"></span>
+          </td>
+          <td>
+            <span id="vdEnergia7"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidiosfield7">Lipídios totais:</label>
-          <span id="resultadoLipidiosfield7"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidratofield7">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidratofield7"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato7"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidratofield7">Carboidrato:</label>
-          <span id="resultadoCarboidratofield7"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotalfield7">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotalfield7"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibrafield7">Fibra alimentar total:</label>
-          <span id="resultadoFibrafield7"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicaofield7">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicaofield7"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao7"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturadosfield7">AG saturados:</label>
-          <span id="resultadoAGSaturadosfield7"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoProteinafield7">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteinafield7"></span>
+          </td>
+          <td>
+            <span id="vdProteina7"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotalfield7">Açucar total:</label>
-          <span id="resultadoAcucarTotalfield7"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidiosfield7">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidiosfield7"></span>
+          </td>
+          <td>
+            <span id="vdLipidios7"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicaofield7">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicaofield7"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturadosfield7">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturadosfield7"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados7"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerrofield7">Ferro:</label>
-          <span id="resultadoFerrofield7"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibrafield7">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibrafield7"></span>
+          </td>
+          <td>
+            <span id="vdFibra7"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodiofield7">Sódio:</label>
-          <span id="resultadoSodiofield7"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerrofield7">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerrofield7"></span>
+          </td>
+          <td>
+            <span id="vdFerro7"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodiofield7">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodiofield7"></span>
+          </td>
+          <td>
+            <span id="vdSodio7"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
@@ -536,57 +1087,134 @@
 
       <button form="form8" type="button" onclick="calcularSaisCondimentos()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergiafield8">Energia:</label>
-          <span id="resultadoEnergiafield8"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteinafield8">Proteína:</label>
-          <span id="resultadoProteinafield8"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergiafield8">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergiafield8"></span>
+          </td>
+          <td>
+            <span id="vdEnergia8"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidiosfield8">Lipídios totais:</label>
-          <span id="resultadoLipidiosfield8"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidratofield8">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidratofield8"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato8"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidratofield8">Carboidrato:</label>
-          <span id="resultadoCarboidratofield8"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotalfield8">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotalfield8"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibrafield8">Fibra alimentar total:</label>
-          <span id="resultadoFibrafield8"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicaofield8">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicaofield8"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao8"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturadosfield8">AG saturados:</label>
-          <span id="resultadoAGSaturadosfield8"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoProteinafield8">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteinafield8"></span>
+          </td>
+          <td>
+            <span id="vdProteina8"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotalfield8">Açucar total:</label>
-          <span id="resultadoAcucarTotalfield8"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidiosfield8">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidiosfield8"></span>
+          </td>
+          <td>
+            <span id="vdLipidios"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicaofield8">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicaofield8"></span>
-        </div>
+        <tr class="fundoClaro8">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturadosfield8">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturadosfield8"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados8"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerrofield8">Ferro:</label>
-          <span id="resultadoFerrofield8"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibrafield8">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibrafield8"></span>
+          </td>
+          <td>
+            <span id="vdFibra8"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodiofield8">Sódio:</label>
-          <span id="resultadoSodiofield8"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerrofield8">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerrofield8"></span>
+          </td>
+          <td>
+            <span id="vdFerro8"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodiofield8">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodiofield8"></span>
+          </td>
+          <td>
+            <span id="vdSodio8"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
@@ -604,57 +1232,134 @@
 
       <button form="form9" type="button" onclick="calcularCarnesVisceras()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergiafield9">Energia:</label>
-          <span id="resultadoEnergiafield9"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteinafield9">Proteína:</label>
-          <span id="resultadoProteinafield9"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergiafield9">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergiafield9"></span>
+          </td>
+          <td>
+            <span id="vdEnergia9"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidiosfield9">Lipídios totais:</label>
-          <span id="resultadoLipidiosfield9"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidratofield9">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidratofield9"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato9"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidratofield9">Carboidrato:</label>
-          <span id="resultadoCarboidratofield9"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotalfield9">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotalfield9"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibrafield9">Fibra alimentar total:</label>
-          <span id="resultadoFibrafield9"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicaofield9">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicaofield9"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao9"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturadosfield9">AG saturados:</label>
-          <span id="resultadoAGSaturadosfield9"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoProteinafield9">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteinafield9"></span>
+          </td>
+          <td>
+            <span id="vdProteina9"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotalfield9">Açucar total:</label>
-          <span id="resultadoAcucarTotalfield9"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidiosfield9">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidiosfield9"></span>
+          </td>
+          <td>
+            <span id="vdLipidios9"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicaofield9">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicaofield9"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturadosfield9">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturadosfield9"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados9"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerrofield9">Ferro:</label>
-          <span id="resultadoFerrofield9"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibrafield9">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibrafield9"></span>
+          </td>
+          <td>
+            <span id="vdFibra9"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodiofield9">Sódio:</label>
-          <span id="resultadoSodiofield9"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerrofield9">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerrofield9"></span>
+          </td>
+          <td>
+            <span id="vdFerro9"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodiofield9">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodiofield9"></span>
+          </td>
+          <td>
+            <span id="vdSodio9"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
@@ -672,57 +1377,134 @@
 
       <button form="form10" type="button" onclick="calcularPescadosFrutosDoMar()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergiafield10">Energia:</label>
-          <span id="resultadoEnergiafield10"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteinafield10">Proteína:</label>
-          <span id="resultadoProteinafield10"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergiafield10">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergiafield10"></span>
+          </td>
+          <td>
+            <span id="vdEnergia10"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidiosfield10">Lipídios totais:</label>
-          <span id="resultadoLipidiosfield10"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidratofield10">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidratofield10"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato10"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidratofield10">Carboidrato:</label>
-          <span id="resultadoCarboidratofield10"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotalfield10">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotalfield10"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibrafield10">Fibra alimentar total:</label>
-          <span id="resultadoFibrafield10"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicaofield10">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicaofield10"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao10"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturadosfield10">AG saturados:</label>
-          <span id="resultadoAGSaturadosfield10"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoProteinafield10">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteinafield10"></span>
+          </td>
+          <td>
+            <span id="vdProteina10"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotalfield10">Açucar total:</label>
-          <span id="resultadoAcucarTotalfield10"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidiosfield10">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidiosfield10"></span>
+          </td>
+          <td>
+            <span id="vdLipidios10"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicaofield10">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicaofield10"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturadosfield10">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturadosfield10"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados10"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerrofield10">Ferro:</label>
-          <span id="resultadoFerrofield10"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibrafield10">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibrafield10"></span>
+          </td>
+          <td>
+            <span id="vdFibra10"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodiofield10">Sódio:</label>
-          <span id="resultadoSodiofield10"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerrofield10">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerrofield10"></span>
+          </td>
+          <td>
+            <span id="vdFerro10"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodiofield10">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodiofield10"></span>
+          </td>
+          <td>
+            <span id="vdSodio10"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
@@ -740,57 +1522,134 @@
 
       <button form="form11" type="button" onclick="calcularEnlatadosConservas()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergiafield11">Energia:</label>
-          <span id="resultadoEnergiafield11"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteinafield11">Proteína:</label>
-          <span id="resultadoProteinafield11"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergiafield11">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergiafield11"></span>
+          </td>
+          <td>
+            <span id="vdEnergia11"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidiosfield11">Lipídios totais:</label>
-          <span id="resultadoLipidiosfield11"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidratofield11">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidratofield11"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato11"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidratofield11">Carboidrato:</label>
-          <span id="resultadoCarboidratofield11"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotalfield11">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotalfield11"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibrafield11">Fibra alimentar total:</label>
-          <span id="resultadoFibrafield11"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicaofield11">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicaofield11"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao11"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturadosfield11">AG saturados:</label>
-          <span id="resultadoAGSaturadosfield11"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoProteinafield11">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteinafield11"></span>
+          </td>
+          <td>
+            <span id="vdProteina11"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotalfield11">Açucar total:</label>
-          <span id="resultadoAcucarTotalfield11"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidiosfield11">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidiosfield11"></span>
+          </td>
+          <td>
+            <span id="vdLipidios11"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicaofield11">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicaofield11"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturadosfield11">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturadosfield11"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados11"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerrofield11">Ferro:</label>
-          <span id="resultadoFerrofield11"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibrafield11">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibrafield11"></span>
+          </td>
+          <td>
+            <span id="vdFibra11"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodiofield11">Sódio:</label>
-          <span id="resultadoSodiofield11"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerrofield11">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerrofield11"></span>
+          </td>
+          <td>
+            <span id="vdFerro11"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodiofield11">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodiofield11"></span>
+          </td>
+          <td>
+            <span id="vdSodio11"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
@@ -808,57 +1667,134 @@
 
       <button form="form12" type="button" onclick="calcularAvesOvos()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergiafield12">Energia:</label>
-          <span id="resultadoEnergiafield12"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteinafield12">Proteína:</label>
-          <span id="resultadoProteinafield12"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergiafield12">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergiafield12"></span>
+          </td>
+          <td>
+            <span id="vdEnergia12"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidiosfield12">Lipídios totais:</label>
-          <span id="resultadoLipidiosfield12"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidratofield12">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidratofield12"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato12"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidratofield12">Carboidrato:</label>
-          <span id="resultadoCarboidratofield12"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotalfield12">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotalfield12"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibrafield12">Fibra alimentar total:</label>
-          <span id="resultadoFibrafield12"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicaofield12">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicaofield12"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao12"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturadosfield12">AG saturados:</label>
-          <span id="resultadoAGSaturadosfield12"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoProteinafield12">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteinafield12"></span>
+          </td>
+          <td>
+            <span id="vdProteina12"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotalfield12">Açucar total:</label>
-          <span id="resultadoAcucarTotalfield12"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidiosfield12">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidiosfield12"></span>
+          </td>
+          <td>
+            <span id="vdLipidios12"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicaofield12">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicaofield12"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturadosfield12">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturadosfield12"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados12"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerrofield12">Ferro:</label>
-          <span id="resultadoFerrofield12"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibrafield12">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibrafield12"></span>
+          </td>
+          <td>
+            <span id="vdFibra12"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodiofield12">Sódio:</label>
-          <span id="resultadoSodiofield12"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerrofield12">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerrofield12"></span>
+          </td>
+          <td>
+            <span id="vdFerro12"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodiofield12">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodiofield12"></span>
+          </td>
+          <td>
+            <span id="vdSodio12"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
@@ -876,57 +1812,134 @@
 
       <button form="form13" type="button" onclick="calcularLaticinios()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergiafield13">Energia:</label>
-          <span id="resultadoEnergiafield13"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteinafield13">Proteína:</label>
-          <span id="resultadoProteinafield13"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergiafield13">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergiafield13"></span>
+          </td>
+          <td>
+            <span id="vdEnergia13"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidiosfield13">Lipídios totais:</label>
-          <span id="resultadoLipidiosfield13"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidratofield13">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidratofield13"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato13"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidratofield13">Carboidrato:</label>
-          <span id="resultadoCarboidratofield13"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotalfield13">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotalfield13"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibrafield13">Fibra alimentar total:</label>
-          <span id="resultadoFibrafield13"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicaofield13">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicaofield13"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao13"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturadosfield13">AG saturados:</label>
-          <span id="resultadoAGSaturadosfield13"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoProteinafield13">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteinafield13"></span>
+          </td>
+          <td>
+            <span id="vdProteina13"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotalfield13">Açucar total:</label>
-          <span id="resultadoAcucarTotalfield13"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidiosfield13">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidiosfield13"></span>
+          </td>
+          <td>
+            <span id="vdLipidios13"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicaofield13">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicaofield13"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturadosfield13">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturadosfield13"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados13"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerrofield13">Ferro:</label>
-          <span id="resultadoFerrofield13"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibrafield13">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibrafield13"></span>
+          </td>
+          <td>
+            <span id="vdFibra13"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodiofield13">Sódio:</label>
-          <span id="resultadoSodiofield13"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerrofield13">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerrofield13"></span>
+          </td>
+          <td>
+            <span id="vdFerro13"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodiofield13">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodiofield13"></span>
+          </td>
+          <td>
+            <span id="vdSodio13"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
@@ -944,57 +1957,134 @@
 
       <button form="form14" type="button" onclick="calcularPanificados()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergiafield14">Energia:</label>
-          <span id="resultadoEnergiafield14"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteinafield14">Proteína:</label>
-          <span id="resultadoProteinafield14"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergiafield14">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergiafield14"></span>
+          </td>
+          <td>
+            <span id="vdEnergia14"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidiosfield14">Lipídios totais:</label>
-          <span id="resultadoLipidiosfield14"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidratofield14">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidratofield14"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato14"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidratofield14">Carboidrato:</label>
-          <span id="resultadoCarboidratofield14"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotalfield14">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotalfield14"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibrafield14">Fibra alimentar total:</label>
-          <span id="resultadoFibrafield14"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicaofield14">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicaofield14"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao14"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturadosfield14">AG saturados:</label>
-          <span id="resultadoAGSaturadosfield14"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoProteinafield14">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteinafield14"></span>
+          </td>
+          <td>
+            <span id="vdProteina14"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotalfield14">Açucar total:</label>
-          <span id="resultadoAcucarTotalfield14"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidiosfield14">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidiosfield14"></span>
+          </td>
+          <td>
+            <span id="vdLipidios14"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicaofield14">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicaofield14"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturadosfield14">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturadosfield14"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados14"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerrofield14">Ferro:</label>
-          <span id="resultadoFerrofield14"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibrafield14">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibrafield14"></span>
+          </td>
+          <td>
+            <span id="vdFibra14"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodiofield14">Sódio:</label>
-          <span id="resultadoSodiofield14"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerrofield14">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerrofield14"></span>
+          </td>
+          <td>
+            <span id="vdFerro14"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodiofield14">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodiofield14"></span>
+          </td>
+          <td>
+            <span id="vdSodio14"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
@@ -1012,57 +2102,134 @@
 
       <button form="form15" type="button" onclick="calcularCarnesIndustrializadas()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergiafield15">Energia:</label>
-          <span id="resultadoEnergiafield15"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteinafield15">Proteína:</label>
-          <span id="resultadoProteinafield15"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergiafield15">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergiafield15"></span>
+          </td>
+          <td>
+            <span id="vdEnergia15"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidiosfield15">Lipídios totais:</label>
-          <span id="resultadoLipidiosfield15"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidratofield15">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidratofield15"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato15"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidratofield15">Carboidrato:</label>
-          <span id="resultadoCarboidratofield15"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotalfield15">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotalfield15"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibrafield15">Fibra alimentar total:</label>
-          <span id="resultadoFibrafield15"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicaofield15">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicaofield15"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao15"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturadosfield15">AG saturados:</label>
-          <span id="resultadoAGSaturadosfield15"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoProteinafield15">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteinafield15"></span>
+          </td>
+          <td>
+            <span id="vdProteina15"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotalfield15">Açucar total:</label>
-          <span id="resultadoAcucarTotalfield15"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidiosfield15">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidiosfield15"></span>
+          </td>
+          <td>
+            <span id="vdLipidios15"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicaofield15">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicaofield15"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturadosfield15">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturadosfield15"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados15"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerrofield15">Ferro:</label>
-          <span id="resultadoFerrofield15"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibrafield15">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibrafield15"></span>
+          </td>
+          <td>
+            <span id="vdFibra15"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodiofield15">Sódio:</label>
-          <span id="resultadoSodiofield15"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerrofield15">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerrofield15"></span>
+          </td>
+          <td>
+            <span id="vdFerro15"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodiofield15">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodiofield15"></span>
+          </td>
+          <td>
+            <span id="vdSodio15"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
@@ -1080,57 +2247,134 @@
 
       <button form="form16" type="button" onclick="calcularBebidasNaoAlcoolicasInfusoes()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergiafield16">Energia:</label>
-          <span id="resultadoEnergiafield16"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteinafield16">Proteína:</label>
-          <span id="resultadoProteinafield16"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergiafield16">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergiafield16"></span>
+          </td>
+          <td>
+            <span id="vdEnergia16"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidiosfield16">Lipídios totais:</label>
-          <span id="resultadoLipidiosfield16"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidratofield16">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidratofield16"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato16"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidratofield16">Carboidrato:</label>
-          <span id="resultadoCarboidratofield16"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotalfield16">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotalfield16"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibrafield16">Fibra alimentar total:</label>
-          <span id="resultadoFibrafield16"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicaofield16">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicaofield16"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao16"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturadosfield16">AG saturados:</label>
-          <span id="resultadoAGSaturadosfield16"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoProteinafield16">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteinafield16"></span>
+          </td>
+          <td>
+            <span id="vdProteina16"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotalfield16">Açucar total:</label>
-          <span id="resultadoAcucarTotalfield16"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidiosfield16">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidiosfield16"></span>
+          </td>
+          <td>
+            <span id="vdLipidios16"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicaofield16">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicaofield16"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturadosfield16">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturadosfield16"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados16"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerrofield16">Ferro:</label>
-          <span id="resultadoFerrofield16"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibrafield16">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibrafield16"></span>
+          </td>
+          <td>
+            <span id="vdFibra16"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodiofield16">Sódio:</label>
-          <span id="resultadoSodiofield16"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerrofield16">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerrofield16"></span>
+          </td>
+          <td>
+            <span id="vdFerro16"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodiofield16">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodiofield16"></span>
+          </td>
+          <td>
+            <span id="vdSodio16"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
@@ -1148,57 +2392,134 @@
 
       <button form="form17" type="button" onclick="calcularBebidasAlcoolicas()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergiafield17">Energia:</label>
-          <span id="resultadoEnergiafield17"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteinafield17">Proteína:</label>
-          <span id="resultadoProteinafield17"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergiafield17">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergiafield17"></span>
+          </td>
+          <td>
+            <span id="vdEnergia17"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidiosfield17">Lipídios totais:</label>
-          <span id="resultadoLipidiosfield17"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidratofield17">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidratofield17"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato17"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidratofield17">Carboidrato:</label>
-          <span id="resultadoCarboidratofield17"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotalfield17">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotalfield17"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibrafield17">Fibra alimentar total:</label>
-          <span id="resultadoFibrafield17"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicaofield17">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicaofield17"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao17"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturadosfield17">AG saturados:</label>
-          <span id="resultadoAGSaturadosfield17"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoProteinafield17">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteinafield17"></span>
+          </td>
+          <td>
+            <span id="vdProteina17"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotalfield17">Açucar total:</label>
-          <span id="resultadoAcucarTotalfield17"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidiosfield17">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidiosfield17"></span>
+          </td>
+          <td>
+            <span id="vdLipidios"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicaofield17">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicaofield17"></span>
-        </div>
+        <tr class="fundoClaro17">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturadosfield17">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturadosfield17"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados17"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerrofield17">Ferro:</label>
-          <span id="resultadoFerrofield17"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibrafield17">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibrafield17"></span>
+          </td>
+          <td>
+            <span id="vdFibra17"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodiofield17">Sódio:</label>
-          <span id="resultadoSodiofield17"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerrofield17">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerrofield17"></span>
+          </td>
+          <td>
+            <span id="vdFerro17"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodiofield17">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodiofield17"></span>
+          </td>
+          <td>
+            <span id="vdSodio17"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
@@ -1216,57 +2537,134 @@
 
       <button form="form18" type="button" onclick="calcularOleosGorduras()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergiafield18">Energia:</label>
-          <span id="resultadoEnergiafield18"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteinafield18">Proteína:</label>
-          <span id="resultadoProteinafield18"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergiafield18">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergiafield18"></span>
+          </td>
+          <td>
+            <span id="vdEnergia18"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidiosfield18">Lipídios totais:</label>
-          <span id="resultadoLipidiosfield18"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidratofield18">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidratofield18"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato18"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidratofield18">Carboidrato:</label>
-          <span id="resultadoCarboidratofield18"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotalfield18">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotalfield18"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibrafield18">Fibra alimentar total:</label>
-          <span id="resultadoFibrafield18"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicaofield18">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicaofield18"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao18"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturadosfield18">AG saturados:</label>
-          <span id="resultadoAGSaturadosfield18"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoProteinafield18">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteinafield18"></span>
+          </td>
+          <td>
+            <span id="vdProteina18"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotalfield18">Açucar total:</label>
-          <span id="resultadoAcucarTotalfield18"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidiosfield18">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidiosfield18"></span>
+          </td>
+          <td>
+            <span id="vdLipidios18"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicaofield18">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicaofield18"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturadosfield18">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturadosfield18"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados18"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerrofield18">Ferro:</label>
-          <span id="resultadoFerrofield18"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibrafield18">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibrafield18"></span>
+          </td>
+          <td>
+            <span id="vdFibra18"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodiofield18">Sódio:</label>
-          <span id="resultadoSodiofield18"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerrofield18">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerrofield18"></span>
+          </td>
+          <td>
+            <span id="vdFerro18"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodiofield18">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodiofield18"></span>
+          </td>
+          <td>
+            <span id="vdSodio18"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
@@ -1284,57 +2682,134 @@
 
       <button form="form19" type="button" onclick="calcularMiscelaneas()">Calcular</button>
 
-      <div class="resultados">
-        <div class="resultado">
-          <label class="total" for="resultadoEnergiafield19">Energia:</label>
-          <span id="resultadoEnergiafield19"></span>
-        </div>
+      <table class="resultados">
+        <tr class="tHead">
+          <td>Nutrientes e energia</td>
+          <td>Quant.</td>
+          <td>%VD</td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoProteinafield19">Proteína:</label>
-          <span id="resultadoProteinafield19"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoEnergiafield19">Energia:</label>
+          </td>
+          <td>
+            <span id="resultadoEnergiafield19"></span>
+          </td>
+          <td>
+            <span id="vdEnergia19"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoLipidiosfield19">Lipídios totais:</label>
-          <span id="resultadoLipidiosfield19"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoCarboidratofield19">Carboidratos:</label>
+          </td>
+          <td>
+            <span id="resultadoCarboidratofield19"></span>
+          </td>
+          <td>
+            <span id="vdCarboidrato19"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoCarboidratofield19">Carboidrato:</label>
-          <span id="resultadoCarboidratofield19"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarTotalfield19">Açucar total:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarTotalfield19"></span>
+          </td>
+          <td>
+            <span></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFibrafield19">Fibra alimentar total:</label>
-          <span id="resultadoFibrafield19"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoAcucarDeAdicaofield19">Açucar adicionado:</label>
+          </td>
+          <td>
+            <span id="resultadoAcucarDeAdicaofield19"></span>
+          </td>
+          <td>
+            <span id="vdAcucarDeAdicao19"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAGSaturadosfield19">AG saturados:</label>
-          <span id="resultadoAGSaturadosfield19"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoProteinafield19">Proteínas:</label>
+          </td>
+          <td>
+            <span id="resultadoProteinafield19"></span>
+          </td>
+          <td>
+            <span id="vdProteina19"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarTotalfield19">Açucar total:</label>
-          <span id="resultadoAcucarTotalfield19"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoLipidiosfield19">Gorduras totais:</label>
+          </td>
+          <td>
+            <span id="resultadoLipidiosfield19"></span>
+          </td>
+          <td>
+            <span id="vdLipidios19"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoAcucarDeAdicaofield19">Açucar de adição:</label>
-          <span id="resultadoAcucarDeAdicaofield19"></span>
-        </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoAGSaturadosfield19">Gorduras saturadas:</label>
+          </td>
+          <td>
+            <span id="resultadoAGSaturadosfield19"></span>
+          </td>
+          <td>
+            <span id="vdAGSaturados19"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoFerrofield19">Ferro:</label>
-          <span id="resultadoFerrofield19"></span>
-        </div>
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoFibrafield19">Fibra alimentar total:</label>
+          </td>
+          <td>
+            <span id="resultadoFibrafield19"></span>
+          </td>
+          <td>
+            <span id="vdFibra19"></span>
+          </td>
+        </tr>
 
-        <div class="resultado">
-          <label class="total" for="resultadoSodiofield19">Sódio:</label>
-          <span id="resultadoSodiofield19"></span>
-        </div>
-      </div>
+        <tr class="fundoClaro">
+          <td class="resultado">
+            <label class="total" for="resultadoFerrofield19">Ferro:</label>
+          </td>
+          <td>
+            <span id="resultadoFerrofield19"></span>
+          </td>
+          <td>
+            <span id="vdFerro19"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="resultado">
+            <label class="total" for="resultadoSodiofield19">Sódio:</label>
+          </td>
+          <td>
+            <span id="resultadoSodiofield19"></span>
+          </td>
+          <td>
+            <span id="vdSodio19"></span>
+          </td>
+        </tr>
+
+      </table>
     </fieldset>
   </form>
 
