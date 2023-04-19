@@ -3,9 +3,12 @@
 * {
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
+  padding-top: 4rem;
   background-color: #effeed;
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -17,6 +20,53 @@ form {
   margin: 3rem;
   color: white;
   width: 20rem;
+}
+
+li {
+  padding: 0.5rem;
+}
+
+.navbar {
+  background-color: #cde8caeb;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.navbar-toggle {
+  margin: 0;
+  margin-left: 0.7rem;
+  padding: 0.7rem;
+  border: none;
+  font-size: 2rem;
+}
+
+.navbar-toggle:hover {
+  border: none;
+  background-color: transparent;
+  color: #749e70;
+}
+
+.navbar-menu {
+  display: none;
+}
+
+.navbar-menu.show {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 0;
+  background-color: #cde8ca00;
+  font-size: 0.75rem;
+}
+
+a {
+  color: #749e70;
+}
+
+a:hover {
+  font-weight: bold;
 }
 
 #form1 {

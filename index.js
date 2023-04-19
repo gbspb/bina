@@ -1,3 +1,23 @@
+// Intercepta o evento de clique em todos os links da página
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault(); // Previne o comportamento padrão do link
+    const target = document.querySelector(this.getAttribute('href')); // Seleciona o elemento alvo com base no valor do atributo href do link
+    if (target) {
+      // Faz a página rolar suavemente para o elemento alvo
+      target.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+const navbarToggle = document.querySelector('.navbar-toggle');
+const navbarMenu = document.querySelector('.navbar-menu');
+
+navbarToggle.addEventListener('click', () => {
+  navbarMenu.classList.toggle('show'); // Toggle the "show" class on the navbar menu
+});
 
 
 function calcularCereaisLeguminosas() {
@@ -162,7 +182,7 @@ function calcularCereaisLeguminosas() {
     ferro = 0.0074 * quantidadeCereaisLeguminosas
     sodio = 0.0501 * quantidadeCereaisLeguminosas
   }
-  if (cereaisLeguminosas === "canjiquinhaDeMilhoEmGraoEnsopada") {
+  if (cereaisLeguminosas === "canjiquinhaDeMilhoEmGraoEnsopado") {
     energia = 0.7968 * quantidadeCereaisLeguminosas
     proteina = 0.0124 * quantidadeCereaisLeguminosas
     lipidios = 0.022 * quantidadeCereaisLeguminosas
@@ -610,7 +630,7 @@ function calcularHortalicasTuberosas() {
     ferro = 0.0031 * quantidadeHortalicasTuberosas
     sodio = 0.05 * quantidadeHortalicasTuberosas
   }
-  if (hortalicasTuberosas === "batataInglesaEnsopada") {
+  if (hortalicasTuberosas === "batataInglesaEnsopado") {
     energia = 1.1174 * quantidadeHortalicasTuberosas
     proteina = 0.0171 * quantidadeHortalicasTuberosas
     lipidios = 0.0301 * quantidadeHortalicasTuberosas
@@ -635,6 +655,762 @@ function calcularHortalicasTuberosas() {
     sodio = 3.1043 * quantidadeHortalicasTuberosas
   }
   if (hortalicasTuberosas === "batataInglesa") {
+    energia = 0.86 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.001 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2001 * quantidadeHortalicasTuberosas
+    fibra = 0.0205 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0086 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0031 * quantidadeHortalicasTuberosas
+    sodio = 0.05 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "mandioquinhaSalsaCozida") {
+    energia = 0.76 * quantidadeHortalicasTuberosas
+    proteina = 0.0137 * quantidadeHortalicasTuberosas
+    lipidios = 0.0014 * quantidadeHortalicasTuberosas
+    carboidrato = 0.1772 * quantidadeHortalicasTuberosas
+    fibra = 0.025 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0574 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0072 * quantidadeHortalicasTuberosas
+    sodio = 0.27 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "mandioquinhaSalsaRefogada") {
+    energia = 0.9174 * quantidadeHortalicasTuberosas
+    proteina = 0.0137 * quantidadeHortalicasTuberosas
+    lipidios = 0.0192 * quantidadeHortalicasTuberosas
+    carboidrato = 0.1772 * quantidadeHortalicasTuberosas
+    fibra = 0.025 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0029 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0574 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0072 * quantidadeHortalicasTuberosas
+    sodio = 0.27 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "mandioquinhaSalsaEnsopado") {
+    energia = 0.9174 * quantidadeHortalicasTuberosas
+    proteina = 0.0137 * quantidadeHortalicasTuberosas
+    lipidios = 0.0192 * quantidadeHortalicasTuberosas
+    carboidrato = 0.1772 * quantidadeHortalicasTuberosas
+    fibra = 0.025 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0029 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0574 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0072 * quantidadeHortalicasTuberosas
+    sodio = 0.27 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "mandioquinhaSalsa") {
+    energia = 0.76 * quantidadeHortalicasTuberosas
+    proteina = 0.0137 * quantidadeHortalicasTuberosas
+    lipidios = 0.0014 * quantidadeHortalicasTuberosas
+    carboidrato = 0.1772 * quantidadeHortalicasTuberosas
+    fibra = 0.025 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0574 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0072 * quantidadeHortalicasTuberosas
+    sodio = 0.27 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "cenouraAmarela") {
+    energia = 0.76 * quantidadeHortalicasTuberosas
+    proteina = 0.0137 * quantidadeHortalicasTuberosas
+    lipidios = 0.0014 * quantidadeHortalicasTuberosas
+    carboidrato = 0.1772 * quantidadeHortalicasTuberosas
+    fibra = 0.025 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0574 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0072 * quantidadeHortalicasTuberosas
+    sodio = 0.27 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataDoceCrua") {
+    energia = 0.76 * quantidadeHortalicasTuberosas
+    proteina = 0.0137 * quantidadeHortalicasTuberosas
+    lipidios = 0.0014 * quantidadeHortalicasTuberosas
+    carboidrato = 0.1772 * quantidadeHortalicasTuberosas
+    fibra = 0.025 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0574 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0072 * quantidadeHortalicasTuberosas
+    sodio = 0.27 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataDoceCozida") {
+    energia = 0.76 * quantidadeHortalicasTuberosas
+    proteina = 0.0137 * quantidadeHortalicasTuberosas
+    lipidios = 0.0014 * quantidadeHortalicasTuberosas
+    carboidrato = 0.1772 * quantidadeHortalicasTuberosas
+    fibra = 0.025 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0574 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0072 * quantidadeHortalicasTuberosas
+    sodio = 0.27 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataDoceAssada") {
+    energia = 0.9 * quantidadeHortalicasTuberosas
+    proteina = 0.0201 * quantidadeHortalicasTuberosas
+    lipidios = 0.0015 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2071 * quantidadeHortalicasTuberosas
+    fibra = 0.033 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0647 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0069 * quantidadeHortalicasTuberosas
+    sodio = 0.36 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataDoceFrita") {
+    energia = 3.5128 * quantidadeHortalicasTuberosas
+    proteina = 0.044 * quantidadeHortalicasTuberosas
+    lipidios = 0.1259 * quantidadeHortalicasTuberosas
+    carboidrato = 0.5688 * quantidadeHortalicasTuberosas
+    fibra = 0.0803 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0185 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.1843 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0231 * quantidadeHortalicasTuberosas
+    sodio = 0.8667 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataDoceRefogada") {
+    energia = 0.9174 * quantidadeHortalicasTuberosas
+    proteina = 0.0137 * quantidadeHortalicasTuberosas
+    lipidios = 0.0192 * quantidadeHortalicasTuberosas
+    carboidrato = 0.1772 * quantidadeHortalicasTuberosas
+    fibra = 0.025 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0029 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0574 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0072 * quantidadeHortalicasTuberosas
+    sodio = 0.27 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataDoceEnsopado") {
+    energia = 0.9174 * quantidadeHortalicasTuberosas
+    proteina = 0.0137 * quantidadeHortalicasTuberosas
+    lipidios = 0.0192 * quantidadeHortalicasTuberosas
+    carboidrato = 0.1772 * quantidadeHortalicasTuberosas
+    fibra = 0.025 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0029 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0574 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0072 * quantidadeHortalicasTuberosas
+    sodio = 0.27 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataDoce") {
+    energia = 0.76 * quantidadeHortalicasTuberosas
+    proteina = 0.0137 * quantidadeHortalicasTuberosas
+    lipidios = 0.0014 * quantidadeHortalicasTuberosas
+    carboidrato = 0.1772 * quantidadeHortalicasTuberosas
+    fibra = 0.025 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0574 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0072 * quantidadeHortalicasTuberosas
+    sodio = 0.27 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "inhameCru") {
+    energia = 1 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.0012 * quantidadeHortalicasTuberosas
+    carboidrato = 0.234 * quantidadeHortalicasTuberosas
+    fibra = 0.018 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0647 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0054 * quantidadeHortalicasTuberosas
+    sodio = 0.08 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "inhameCozido") {
+    energia = 1 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.0012 * quantidadeHortalicasTuberosas
+    carboidrato = 0.234 * quantidadeHortalicasTuberosas
+    fibra = 0.018 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0647 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0054 * quantidadeHortalicasTuberosas
+    sodio = 0.08 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "inhameAssado") {
+    energia = 0.9 * quantidadeHortalicasTuberosas
+    proteina = 0.0201 * quantidadeHortalicasTuberosas
+    lipidios = 0.0015 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2071 * quantidadeHortalicasTuberosas
+    fibra = 0.033 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0647 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0069 * quantidadeHortalicasTuberosas
+    sodio = 0.36 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "inhameFrito") {
+    energia = 1.1574 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.019 * quantidadeHortalicasTuberosas
+    carboidrato = 0.234 * quantidadeHortalicasTuberosas
+    fibra = 0.018 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0028 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0647 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0054 * quantidadeHortalicasTuberosas
+    sodio = 0.08 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "inhameRefogado") {
+    energia = 1.1574 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.019 * quantidadeHortalicasTuberosas
+    carboidrato = 0.234 * quantidadeHortalicasTuberosas
+    fibra = 0.018 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0028 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0647 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0054 * quantidadeHortalicasTuberosas
+    sodio = 0.08 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "inhameEnsopado") {
+    energia = 1.1574 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.019 * quantidadeHortalicasTuberosas
+    carboidrato = 0.234 * quantidadeHortalicasTuberosas
+    fibra = 0.018 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0028 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0647 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0054 * quantidadeHortalicasTuberosas
+    sodio = 0.08 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "inhameSopa") {
+    energia = 0.3144 * quantidadeHortalicasTuberosas
+    proteina = 0.0095 * quantidadeHortalicasTuberosas
+    lipidios = 0.0012 * quantidadeHortalicasTuberosas
+    carboidrato = 0.0701 * quantidadeHortalicasTuberosas
+    fibra = 0.0071 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0004 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0328 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0.0252 * quantidadeHortalicasTuberosas
+    ferro = 0.0029 * quantidadeHortalicasTuberosas
+    sodio = 3.1043 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "quicare") {
+    energia = 1 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.0012 * quantidadeHortalicasTuberosas
+    carboidrato = 0.234 * quantidadeHortalicasTuberosas
+    fibra = 0.018 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0647 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0054 * quantidadeHortalicasTuberosas
+    sodio = 0.08 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "mandiocaCrua") {
+    energia = 1.25 * quantidadeHortalicasTuberosas
+    proteina = 0.006 * quantidadeHortalicasTuberosas
+    lipidios = 0.003 * quantidadeHortalicasTuberosas
+    carboidrato = 0.301 * quantidadeHortalicasTuberosas
+    fibra = 0.016 * quantidadeHortalicasTuberosas
+    agSaturados = 0.001 * quantidadeHortalicasTuberosas
+    acucarTotal = 0 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.01 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "mandiocaCozida") {
+    energia = 1.25 * quantidadeHortalicasTuberosas
+    proteina = 0.006 * quantidadeHortalicasTuberosas
+    lipidios = 0.003 * quantidadeHortalicasTuberosas
+    carboidrato = 0.301 * quantidadeHortalicasTuberosas
+    fibra = 0.016 * quantidadeHortalicasTuberosas
+    agSaturados = 0.001 * quantidadeHortalicasTuberosas
+    acucarTotal = 0 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.01 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "mandiocaAssada") {
+    energia = 1.25 * quantidadeHortalicasTuberosas
+    proteina = 0.006 * quantidadeHortalicasTuberosas
+    lipidios = 0.003 * quantidadeHortalicasTuberosas
+    carboidrato = 0.301 * quantidadeHortalicasTuberosas
+    fibra = 0.016 * quantidadeHortalicasTuberosas
+    agSaturados = 0.001 * quantidadeHortalicasTuberosas
+    acucarTotal = 0 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.01 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "mandiocaFrita") {
+    energia = 1.6274 * quantidadeHortalicasTuberosas
+    proteina = 0.0057 * quantidadeHortalicasTuberosas
+    lipidios = 0.0526 * quantidadeHortalicasTuberosas
+    carboidrato = 0.286 * quantidadeHortalicasTuberosas
+    fibra = 0.0152 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0087 * quantidadeHortalicasTuberosas
+    acucarTotal = 0 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.0095 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "mandiocaRefogada") {
+    energia = 1.6274 * quantidadeHortalicasTuberosas
+    proteina = 0.0057 * quantidadeHortalicasTuberosas
+    lipidios = 0.0526 * quantidadeHortalicasTuberosas
+    carboidrato = 0.286 * quantidadeHortalicasTuberosas
+    fibra = 0.0152 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0087 * quantidadeHortalicasTuberosas
+    acucarTotal = 0 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.0095 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "mandiocaMolhoVermelho") {
+    energia = 1.048 * quantidadeHortalicasTuberosas
+    proteina = 0.0074 * quantidadeHortalicasTuberosas
+    lipidios = 0.0028 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2516 * quantidadeHortalicasTuberosas
+    fibra = 0.0158 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0009 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0085 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0028 * quantidadeHortalicasTuberosas
+    sodio = 1.056 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "mandiocaComManteigaOleo") {
+    energia = 1.546 * quantidadeHortalicasTuberosas
+    proteina = 0.0061 * quantidadeHortalicasTuberosas
+    lipidios = 0.0434 * quantidadeHortalicasTuberosas
+    carboidrato = 0.286 * quantidadeHortalicasTuberosas
+    fibra = 0.0152 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0266 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0001 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.2975 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "mandiocaEnsopado") {
+    energia = 1.6274 * quantidadeHortalicasTuberosas
+    proteina = 0.0057 * quantidadeHortalicasTuberosas
+    lipidios = 0.0526 * quantidadeHortalicasTuberosas
+    carboidrato = 0.286 * quantidadeHortalicasTuberosas
+    fibra = 0.0152 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0087 * quantidadeHortalicasTuberosas
+    acucarTotal = 0 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.0095 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "mandiocaSopa") {
+    energia = 0.3144 * quantidadeHortalicasTuberosas
+    proteina = 0.0095 * quantidadeHortalicasTuberosas
+    lipidios = 0.0012 * quantidadeHortalicasTuberosas
+    carboidrato = 0.0701 * quantidadeHortalicasTuberosas
+    fibra = 0.0071 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0004 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0328 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0.0252 * quantidadeHortalicasTuberosas
+    ferro = 0.0029 * quantidadeHortalicasTuberosas
+    sodio = 3.1043 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "mandioca") {
+    energia = 1.25 * quantidadeHortalicasTuberosas
+    proteina = 0.006 * quantidadeHortalicasTuberosas
+    lipidios = 0.003 * quantidadeHortalicasTuberosas
+    carboidrato = 0.301 * quantidadeHortalicasTuberosas
+    fibra = 0.016 * quantidadeHortalicasTuberosas
+    agSaturados = 0.001 * quantidadeHortalicasTuberosas
+    acucarTotal = 0 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.01 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "aipimCozido") {
+    energia = 1.25 * quantidadeHortalicasTuberosas
+    proteina = 0.006 * quantidadeHortalicasTuberosas
+    lipidios = 0.003 * quantidadeHortalicasTuberosas
+    carboidrato = 0.301 * quantidadeHortalicasTuberosas
+    fibra = 0.016 * quantidadeHortalicasTuberosas
+    agSaturados = 0.001 * quantidadeHortalicasTuberosas
+    acucarTotal = 0 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.01 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "aipimAssado") {
+    energia = 1.25 * quantidadeHortalicasTuberosas
+    proteina = 0.006 * quantidadeHortalicasTuberosas
+    lipidios = 0.003 * quantidadeHortalicasTuberosas
+    carboidrato = 0.301 * quantidadeHortalicasTuberosas
+    fibra = 0.016 * quantidadeHortalicasTuberosas
+    agSaturados = 0.001 * quantidadeHortalicasTuberosas
+    acucarTotal = 0 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.01 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "aipimFrito") {
+    energia = 1.6274 * quantidadeHortalicasTuberosas
+    proteina = 0.0057 * quantidadeHortalicasTuberosas
+    lipidios = 0.0526 * quantidadeHortalicasTuberosas
+    carboidrato = 0.286 * quantidadeHortalicasTuberosas
+    fibra = 0.0152 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0087 * quantidadeHortalicasTuberosas
+    acucarTotal = 0 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.0095 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "aipimEmpanadoAMilanesa") {
+    energia = 1.6274 * quantidadeHortalicasTuberosas
+    proteina = 0.0057 * quantidadeHortalicasTuberosas
+    lipidios = 0.0526 * quantidadeHortalicasTuberosas
+    carboidrato = 0.286 * quantidadeHortalicasTuberosas
+    fibra = 0.0152 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0087 * quantidadeHortalicasTuberosas
+    acucarTotal = 0 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.0095 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "aipimRefogado") {
+    energia = 1.6274 * quantidadeHortalicasTuberosas
+    proteina = 0.0057 * quantidadeHortalicasTuberosas
+    lipidios = 0.0526 * quantidadeHortalicasTuberosas
+    carboidrato = 0.286 * quantidadeHortalicasTuberosas
+    fibra = 0.0152 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0087 * quantidadeHortalicasTuberosas
+    acucarTotal = 0 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.0095 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "aipimMolhoVermelho") {
+    energia = 1.048 * quantidadeHortalicasTuberosas
+    proteina = 0.0074 * quantidadeHortalicasTuberosas
+    lipidios = 0.0028 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2516 * quantidadeHortalicasTuberosas
+    fibra = 0.0158 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0009 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0085 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0028 * quantidadeHortalicasTuberosas
+    sodio = 1.056 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "aipimComManteigaOleo") {
+    energia = 1.546 * quantidadeHortalicasTuberosas
+    proteina = 0.0061 * quantidadeHortalicasTuberosas
+    lipidios = 0.0434 * quantidadeHortalicasTuberosas
+    carboidrato = 0.286 * quantidadeHortalicasTuberosas
+    fibra = 0.0152 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0266 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0001 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.2975 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "aipimEnsopado") {
+    energia = 1.6274 * quantidadeHortalicasTuberosas
+    proteina = 0.0057 * quantidadeHortalicasTuberosas
+    lipidios = 0.0526 * quantidadeHortalicasTuberosas
+    carboidrato = 0.286 * quantidadeHortalicasTuberosas
+    fibra = 0.0152 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0087 * quantidadeHortalicasTuberosas
+    acucarTotal = 0 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.0095 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "aipimSopa") {
+    energia = 0.3144 * quantidadeHortalicasTuberosas
+    proteina = 0.0095 * quantidadeHortalicasTuberosas
+    lipidios = 0.0012 * quantidadeHortalicasTuberosas
+    carboidrato = 0.0701 * quantidadeHortalicasTuberosas
+    fibra = 0.0071 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0004 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0328 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0.0252 * quantidadeHortalicasTuberosas
+    ferro = 0.0029 * quantidadeHortalicasTuberosas
+    sodio = 3.1043 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "aipim") {
+    energia = 1.25 * quantidadeHortalicasTuberosas
+    proteina = 0.006 * quantidadeHortalicasTuberosas
+    lipidios = 0.003 * quantidadeHortalicasTuberosas
+    carboidrato = 0.301 * quantidadeHortalicasTuberosas
+    fibra = 0.016 * quantidadeHortalicasTuberosas
+    agSaturados = 0.001 * quantidadeHortalicasTuberosas
+    acucarTotal = 0 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.01 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "macaxeiraCrua") {
+    energia = 1.25 * quantidadeHortalicasTuberosas
+    proteina = 0.006 * quantidadeHortalicasTuberosas
+    lipidios = 0.003 * quantidadeHortalicasTuberosas
+    carboidrato = 0.301 * quantidadeHortalicasTuberosas
+    fibra = 0.016 * quantidadeHortalicasTuberosas
+    agSaturados = 0.001 * quantidadeHortalicasTuberosas
+    acucarTotal = 0 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.01 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "macaxeiraCozida") {
+    energia = 1.25 * quantidadeHortalicasTuberosas
+    proteina = 0.006 * quantidadeHortalicasTuberosas
+    lipidios = 0.003 * quantidadeHortalicasTuberosas
+    carboidrato = 0.301 * quantidadeHortalicasTuberosas
+    fibra = 0.016 * quantidadeHortalicasTuberosas
+    agSaturados = 0.001 * quantidadeHortalicasTuberosas
+    acucarTotal = 0 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.01 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "macaxeiraAssada") {
+    energia = 1.25 * quantidadeHortalicasTuberosas
+    proteina = 0.006 * quantidadeHortalicasTuberosas
+    lipidios = 0.003 * quantidadeHortalicasTuberosas
+    carboidrato = 0.301 * quantidadeHortalicasTuberosas
+    fibra = 0.016 * quantidadeHortalicasTuberosas
+    agSaturados = 0.001 * quantidadeHortalicasTuberosas
+    acucarTotal = 0 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.01 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "macaxeiraFrita") {
+    energia = 1.6274 * quantidadeHortalicasTuberosas
+    proteina = 0.0057 * quantidadeHortalicasTuberosas
+    lipidios = 0.0526 * quantidadeHortalicasTuberosas
+    carboidrato = 0.286 * quantidadeHortalicasTuberosas
+    fibra = 0.0152 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0087 * quantidadeHortalicasTuberosas
+    acucarTotal = 0 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.001 * quantidadeHortalicasTuberosas
+    sodio = 0.0095 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "caraCozido") {
+    energia = 1 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.0012 * quantidadeHortalicasTuberosas
+    carboidrato = 0.234 * quantidadeHortalicasTuberosas
+    fibra = 0.018 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0647 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0054 * quantidadeHortalicasTuberosas
+    sodio = 0.08 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "caraFrito") {
+    energia = 1.1574 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.019 * quantidadeHortalicasTuberosas
+    carboidrato = 0.234 * quantidadeHortalicasTuberosas
+    fibra = 0.018 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0028 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0647 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0054 * quantidadeHortalicasTuberosas
+    sodio = 0.08 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "caraRefogado") {
+    energia = 1.1574 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.019 * quantidadeHortalicasTuberosas
+    carboidrato = 0.234 * quantidadeHortalicasTuberosas
+    fibra = 0.018 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0028 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0647 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0054 * quantidadeHortalicasTuberosas
+    sodio = 0.08 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "caraEnsopado") {
+    energia = 1.1574 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.019 * quantidadeHortalicasTuberosas
+    carboidrato = 0.234 * quantidadeHortalicasTuberosas
+    fibra = 0.018 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0028 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0647 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0054 * quantidadeHortalicasTuberosas
+    sodio = 0.08 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "caraMingau") {
+    energia = 1 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.0012 * quantidadeHortalicasTuberosas
+    carboidrato = 0.234 * quantidadeHortalicasTuberosas
+    fibra = 0.018 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0647 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0054 * quantidadeHortalicasTuberosas
+    sodio = 0.08 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "caraSopa") {
+    energia = 0.3144 * quantidadeHortalicasTuberosas
+    proteina = 0.0095 * quantidadeHortalicasTuberosas
+    lipidios = 0.0012 * quantidadeHortalicasTuberosas
+    carboidrato = 0.0701 * quantidadeHortalicasTuberosas
+    fibra = 0.0071 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0004 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0328 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0.0252 * quantidadeHortalicasTuberosas
+    ferro = 0.0029 * quantidadeHortalicasTuberosas
+    sodio = 3.1043 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "inhameCaraquento") {
+    energia = 1 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.0012 * quantidadeHortalicasTuberosas
+    carboidrato = 0.234 * quantidadeHortalicasTuberosas
+    fibra = 0.018 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0647 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0054 * quantidadeHortalicasTuberosas
+    sodio = 0.08 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataNaoEspecificadaCrua") {
+    energia = 0.86 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.001 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2001 * quantidadeHortalicasTuberosas
+    fibra = 0.0205 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0086 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0031 * quantidadeHortalicasTuberosas
+    sodio = 0.05 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataNaoEspecificadaCozida") {
+    energia = 0.86 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.001 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2001 * quantidadeHortalicasTuberosas
+    fibra = 0.0205 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0086 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0031 * quantidadeHortalicasTuberosas
+    sodio = 0.05 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataNaoEspecificadaGrelhadaBrasaChurrasco") {
+    energia = 0.86 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.001 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2001 * quantidadeHortalicasTuberosas
+    fibra = 0.0205 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0086 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0031 * quantidadeHortalicasTuberosas
+    sodio = 0.05 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataNaoEspecificadaAssada") {
+    energia = 0.86 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.001 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2001 * quantidadeHortalicasTuberosas
+    fibra = 0.0205 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0086 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0031 * quantidadeHortalicasTuberosas
+    sodio = 0.05 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataNaoEspecificadaFrita") {
+    energia = 2.635 * quantidadeHortalicasTuberosas
+    proteina = 0.0287 * quantidadeHortalicasTuberosas
+    lipidios = 0.1364 * quantidadeHortalicasTuberosas
+    carboidrato = 0.336 * quantidadeHortalicasTuberosas
+    fibra = 0.0344 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0215 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0144 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0053 * quantidadeHortalicasTuberosas
+    sodio = 0.084 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataNaoEspecificadaRefogada") {
+    energia = 1.1174 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.0301 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2001 * quantidadeHortalicasTuberosas
+    fibra = 0.0205 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0048 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0086 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0031 * quantidadeHortalicasTuberosas
+    sodio = 0.05 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataNaoEspecificadaMolhoVermelho") {
+    energia = 0.736 * quantidadeHortalicasTuberosas
+    proteina = 0.0163 * quantidadeHortalicasTuberosas
+    lipidios = 0.0012 * quantidadeHortalicasTuberosas
+    carboidrato = 0.1708 * quantidadeHortalicasTuberosas
+    fibra = 0.0194 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0003 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0154 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0045 * quantidadeHortalicasTuberosas
+    sodio = 1.088 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataNaoEspecificadaMolhoBranco") {
+    energia = 1.0139 * quantidadeHortalicasTuberosas
+    proteina = 0.0215 * quantidadeHortalicasTuberosas
+    lipidios = 0.0257 * quantidadeHortalicasTuberosas
+    carboidrato = 0.1786 * quantidadeHortalicasTuberosas
+    fibra = 0.0168 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0155 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0172 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0032 * quantidadeHortalicasTuberosas
+    sodio = 0.2492 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataNaoEspecificadaAoVinagrete") {
+    energia = 1.1174 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.0301 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2001 * quantidadeHortalicasTuberosas
+    fibra = 0.0205 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0048 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0086 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0031 * quantidadeHortalicasTuberosas
+    sodio = 0.05 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataNaoEspecificadaEnsopado") {
+    energia = 1.1174 * quantidadeHortalicasTuberosas
+    proteina = 0.0171 * quantidadeHortalicasTuberosas
+    lipidios = 0.0301 * quantidadeHortalicasTuberosas
+    carboidrato = 0.2001 * quantidadeHortalicasTuberosas
+    fibra = 0.0205 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0048 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0086 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0 * quantidadeHortalicasTuberosas
+    ferro = 0.0031 * quantidadeHortalicasTuberosas
+    sodio = 0.05 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataNaoEspecificadaSopa") {
+    energia = 0.3144 * quantidadeHortalicasTuberosas
+    proteina = 0.0095 * quantidadeHortalicasTuberosas
+    lipidios = 0.0012 * quantidadeHortalicasTuberosas
+    carboidrato = 0.0701 * quantidadeHortalicasTuberosas
+    fibra = 0.0071 * quantidadeHortalicasTuberosas
+    agSaturados = 0.0004 * quantidadeHortalicasTuberosas
+    acucarTotal = 0.0328 * quantidadeHortalicasTuberosas
+    acucarDeAdicao = 0.0252 * quantidadeHortalicasTuberosas
+    ferro = 0.0029 * quantidadeHortalicasTuberosas
+    sodio = 3.1043 * quantidadeHortalicasTuberosas
+  }
+  if (hortalicasTuberosas === "batataNaoEspecificada") {
     energia = 0.86 * quantidadeHortalicasTuberosas
     proteina = 0.0171 * quantidadeHortalicasTuberosas
     lipidios = 0.001 * quantidadeHortalicasTuberosas
