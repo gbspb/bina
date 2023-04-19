@@ -8,7 +8,7 @@
 }
 
 body {
-  padding-top: 4rem;
+  padding-top: 1rem;
   background-color: #effeed;
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -18,7 +18,7 @@ body {
 
 form {
   margin: 3rem;
-  margin-top: 5rem;
+  margin-top: 6rem;
   color: white;
   width: 20rem;
 }
